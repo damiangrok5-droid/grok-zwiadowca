@@ -68,7 +68,7 @@ select{height:44px;border-radius:12px;border:0;background:var(--field);color:var
 .chip.on{background:var(--accent);color:#fff}
 .chip small{opacity:.7;font-weight:600;margin-left:4px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-top:10px}
-.card{position:relative;border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:12px;animation:in .4s ease both;scroll-margin-top:150px}
+.card{min-width:0;overflow-wrap:anywhere;position:relative;border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:12px;animation:in .4s ease both;scroll-margin-top:150px}
 .card.flash{box-shadow:0 0 0 3px var(--accent),var(--shadow)}
 .card.arch{opacity:.6}
 @keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
@@ -96,7 +96,7 @@ summary::after{content:"›";margin-left:auto;font-size:22px;transition:transfor
 details[open] summary::after{transform:rotate(90deg)}
 .how{padding:0 14px 14px;font-size:14px;line-height:1.45}
 .how ol{margin:0 0 10px;padding-left:20px}
-.prompt{white-space:pre-wrap;font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--card);border:1px solid var(--stroke);border-radius:12px;padding:10px 12px;margin:0 0 10px;user-select:text;-webkit-user-select:text}
+.prompt{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--card);border:1px solid var(--stroke);border-radius:12px;padding:10px 12px;margin:0 0 10px;user-select:text;-webkit-user-select:text}
 .btn{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;border-radius:12px;text-decoration:none;border:0;cursor:pointer;
   font:600 15px inherit;font-family:inherit;transition:transform .1s;padding:0 14px}
 .btn:active{transform:scale(.97)}
@@ -210,7 +210,7 @@ function card(it,i){
       <span class="tag d-${it.trudnosc}">${esc(it.trudnosc)}</span>
       <span class="tag">${pop}</span>
       <span class="tag">🕒 ${fmtD(it.aktywnosc)}</span>
-      <span class="tag">📄 ${esc(it.licencja)}</span>
+      <span class="tag">📄 Licencja: ${esc(it.licencja)}</span>
     </div>
     <details>
       <summary>Jak użyć z Grok Botem</summary>
