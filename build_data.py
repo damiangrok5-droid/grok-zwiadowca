@@ -178,12 +178,12 @@ add("tabler/tabler","Dashboardy HTML","Tabler",
  "Darmowy UI kit dashboardów admina: 100+ stron, tysiące ikon, komponenty i wykresy.",
  7,"Gotowe wzory układów dashboardów; ikony SVG można wbudować bez zależności.","średnia",
  ["Bot przegląda układy Tablera.","Wybiera wzór dashboardu.","Odtwarza go w czystym HTML w Twoim stylu."],
- "Przejrzyj https://github.com/tabler/tabler i na wzór jednego z jego dashboardów przebuduj mój dashboard z /workspace/abbvie-dashboard – czysty HTML bez zewnętrznych zależności, styl iOS, iPhone. Pokaż zrzut ekranu.")
+ "Przejrzyj https://github.com/tabler/tabler i na wzór jednego z jego dashboardów przebuduj mój dashboard z /workspace/(folder dashboardu) – czysty HTML bez zewnętrznych zależności, styl iOS, iPhone. Pokaż zrzut ekranu.")
 add("chartjs/Chart.js","Dashboardy HTML","Chart.js",
  "Prosta biblioteka wykresów HTML5 (canvas): liniowe, słupkowe, kołowe, z animacjami.",
  7,"Najprostsza droga do ładnych wykresów w Twoich dashboardach (plik można wbudować lokalnie).","łatwa",
  ["Bot pobiera plik chart.umd.js do repo.","Dodaje wykres do strony.","Publikuje na GitHub Pages."],
- "Dodaj do mojego dashboardu z /workspace/abbvie-dashboard wykresy z Chart.js (https://github.com/chartjs/Chart.js) – plik biblioteki skopiuj do repo, bez CDN. Wykresy mają dobrze wyglądać na iPhonie i w trybie ciemnym.")
+ "Dodaj do mojego dashboardu z /workspace/(folder dashboardu) wykresy z Chart.js (https://github.com/chartjs/Chart.js) – plik biblioteki skopiuj do repo, bez CDN. Wykresy mają dobrze wyglądać na iPhonie i w trybie ciemnym.")
 
 # Non-GitHub
 NG = {

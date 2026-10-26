@@ -811,7 +811,7 @@
     "Wybiera wzór dashboardu.",
     "Odtwarza go w czystym HTML w Twoim stylu."
    ],
-   "prompt": "Przejrzyj https://github.com/tabler/tabler i na wzór jednego z jego dashboardów przebuduj mój dashboard z /workspace/abbvie-dashboard – czysty HTML bez zewnętrznych zależności, styl iOS, iPhone. Pokaż zrzut ekranu.",
+   "prompt": "Przejrzyj https://github.com/tabler/tabler i na wzór jednego z jego dashboardów przebuduj mój dashboard z /workspace/(folder dashboardu) – czysty HTML bez zewnętrznych zależności, styl iOS, iPhone. Pokaż zrzut ekranu.",
    "top": false,
    "nazwa": "Tabler",
    "repo": "tabler/tabler",
@@ -834,7 +834,7 @@
     "Dodaje wykres do strony.",
     "Publikuje na GitHub Pages."
    ],
-   "prompt": "Dodaj do mojego dashboardu z /workspace/abbvie-dashboard wykresy z Chart.js (https://github.com/chartjs/Chart.js) – plik biblioteki skopiuj do repo, bez CDN. Wykresy mają dobrze wyglądać na iPhonie i w trybie ciemnym.",
+   "prompt": "Dodaj do mojego dashboardu z /workspace/(folder dashboardu) wykresy z Chart.js (https://github.com/chartjs/Chart.js) – plik biblioteki skopiuj do repo, bez CDN. Wykresy mają dobrze wyglądać na iPhonie i w trybie ciemnym.",
    "top": false,
    "nazwa": "Chart.js",
    "repo": "chartjs/Chart.js",
