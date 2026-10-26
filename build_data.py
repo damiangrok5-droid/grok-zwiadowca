@@ -5,8 +5,8 @@ E = []
 def add(*a): E.append(a)
 
 add("anthropics/skills","Skille","Anthropic Agent Skills",
- "Oficjalne repozytorium skilli w formacie SKILL.md od twórców standardu: m.in. skill-creator (tworzenie i testowanie własnych skilli), mcp-builder, obsługa docx/xlsx/pptx/pdf, frontend-design.",
- 10,"To wzorzec dokładnie tego formatu, którego używa Grok Bot – możesz kopiować gotowe skille i uczyć się, jak pisać własne.","łatwa",
+ "Oficjalne repozytorium skilli w formacie SKILL.md od twórców standardu: m.in. skill-creator (tworzenie i testowanie własnych skilli), mcp-builder i frontend-design na licencji Apache-2.0. Skille docx/xlsx/pptx/pdf mają licencję zastrzeżoną (All rights reserved): tylko jako wzór, nie kopiować.",
+ 10,"To wzorzec dokładnie tego formatu, którego używa Grok Bot – skille na Apache-2.0 (skill-creator, frontend-design, mcp-builder) możesz adaptować, a docx/xlsx/pptx/pdf tylko czytać jako wzór.","łatwa",
  ["Poproś bota o sklonowanie repo na komputer (/workspace).","Wybierz skill (np. skill-creator lub frontend-design).","Każ botowi zaadaptować go jako własny skill i zapisać."],
  "Sklonuj na swoim komputerze repo https://github.com/anthropics/skills do /workspace/skills-anthropic. Przeczytaj skille skill-creator i frontend-design. Na ich wzór zapisz mi jako Twoje własne skille: (1) 'tworzenie-skilli' – jak budujesz i testujesz nowy skill, (2) 'projektowanie-stron' – zasady ładnych stron HTML w stylu iOS. Pisz po polsku i pokaż mi listę zapisanych skilli.")
 add("mvanhorn/last30days-skill","Skille","last30days – research z ostatnich 30 dni",
@@ -227,6 +227,9 @@ for (key,kat,nazwa,opis,ocena,why,tr,kroki,prompt) in E:
                   popularnosc=f"{n['points']} {n['unit']}",dyskusja=n.get('hn') or n['url'])
     items.append(it)
 from projekt_domu import projekt_domu_items, PD_TOP
+LIC_OVERRIDE={'anthropics__skills':'mieszana: Apache-2.0 / zastrzeżona (docx, xlsx, pptx, pdf)'}
+for _i in items:
+    if _i['id'] in LIC_OVERRIDE: _i['licencja']=LIC_OVERRIDE[_i['id']]
 items += projekt_domu_items()
 assert len(items)==len({i['id'] for i in items})
 data=dict(tytul="Zwiadowca Rozwiązań",data_zwiadu="2026-10-26",wygenerowano=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"),

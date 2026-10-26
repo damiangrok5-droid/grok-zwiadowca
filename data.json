@@ -1,7 +1,7 @@
 {
  "tytul": "Zwiadowca Rozwiązań",
  "data_zwiadu": "2026-10-26",
- "wygenerowano": "2026-10-26T10:27Z",
+ "wygenerowano": "2026-10-26T11:07Z",
  "zrodla": [
   "GitHub API (gh api repos/…, search/repositories)",
   "Hacker News (Algolia API)",
@@ -20,9 +20,9 @@
   {
    "id": "anthropics__skills",
    "kategoria": "Skille",
-   "opis": "Oficjalne repozytorium skilli w formacie SKILL.md od twórców standardu: m.in. skill-creator (tworzenie i testowanie własnych skilli), mcp-builder, obsługa docx/xlsx/pptx/pdf, frontend-design.",
+   "opis": "Oficjalne repozytorium skilli w formacie SKILL.md od twórców standardu: m.in. skill-creator (tworzenie i testowanie własnych skilli), mcp-builder i frontend-design na licencji Apache-2.0. Skille docx/xlsx/pptx/pdf mają licencję zastrzeżoną (All rights reserved): tylko jako wzór, nie kopiować.",
    "ocena": 10,
-   "dlaczego": "To wzorzec dokładnie tego formatu, którego używa Grok Bot – możesz kopiować gotowe skille i uczyć się, jak pisać własne.",
+   "dlaczego": "To wzorzec dokładnie tego formatu, którego używa Grok Bot – skille na Apache-2.0 (skill-creator, frontend-design, mcp-builder) możesz adaptować, a docx/xlsx/pptx/pdf tylko czytać jako wzór.",
    "trudnosc": "łatwa",
    "kroki": [
     "Poproś bota o sklonowanie repo na komputer (/workspace).",
@@ -35,7 +35,7 @@
    "repo": "anthropics/skills",
    "url": "https://github.com/anthropics/skills",
    "zrodlo": "GitHub",
-   "licencja": "brak danych",
+   "licencja": "mieszana: Apache-2.0 / zastrzeżona (docx, xlsx, pptx, pdf)",
    "gwiazdki": 183867,
    "aktywnosc": "2026-10-09",
    "opis_oryginalny": "Public repository for Agent Skills"
@@ -954,7 +954,7 @@
     "Dodaje zakładkę „Model 3D” z plikiem GLB.",
     "Dla AR na iPhonie eksportuje też wersję USDZ."
    ],
-   "prompt": "Na stronie Projektu Domu dodaj zakładkę „Model 3D”, która pokazuje model z /workspace/projekt-domu/3d/parter-g2-v2.glb przez <model-viewer> (https://github.com/google/model-viewer). Plik biblioteki skopiuj do repo, bez CDN. Ma działać na iPhonie: obracanie palcem i przycisk AR (Quick Look, wersja USDZ). Pokaż mi zrzut z widoku iPhone'a.",
+   "prompt": "Na stronie Projektu Domu dodaj zakładkę „Model 3D”, która pokazuje model z projekt-domu/3d/parter-g2-v2.glb przez <model-viewer> (https://github.com/google/model-viewer). Plik biblioteki skopiuj do repo, bez CDN. Ma działać na iPhonie: obracanie palcem i przycisk AR (Quick Look, wersja USDZ). Pokaż mi zrzut z widoku iPhone'a.",
    "gwiazdki": 8292,
    "aktywnosc": "2026-10-23",
    "licencja": "Apache-2.0",
@@ -971,20 +971,20 @@
    "repo": "anthropics/skills",
    "url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
    "kategoria": "Skille",
-   "nazwa": "Anthropic: skille xlsx + pdf (kosztorysy i dokumenty)",
-   "ocena": 9,
+   "nazwa": "Anthropic: skille xlsx + pdf – tylko jako wzór",
+   "ocena": 5,
    "trudnosc": "łatwa",
-   "opis": "Oficjalne skille do tworzenia arkuszy Excel z formułami i formatowaniem (xlsx) oraz do czytania, łączenia i generowania PDF (pdf). W tym samym repo jest też frontend-design.",
-   "dlaczego": "Wycena budowy jest dziś w CSV; z tym skillem będzie prawdziwy arkusz z formułami i sumami etapów, a z pdf – czytelny pakiet dla wykonawcy.",
+   "opis": "Skille Anthropic do arkuszy Excel (xlsx) i plików PDF (pdf). Ich LICENSE.txt mówi: „© 2025 Anthropic, PBC. All rights reserved.”, więc nie wolno ich kopiować ani zapisywać jako własnych skilli. Można je tylko czytać jako wzór metody.",
+   "dlaczego": "Pokazują dobre praktyki, np. formuły zamiast wpisanych na sztywno sum i sprawdzanie przeliczenia arkusza. Własny skill do kosztorysów trzeba napisać od zera na wolnych bibliotekach (np. openpyxl, MIT).",
    "kroki": [
-    "Agent czyta skills/xlsx/SKILL.md i skills/pdf/SKILL.md.",
-    "Zapisuje je jako własne skille (po Twojej zgodzie).",
-    "Przerabia 02-wycena-budowy.csv na arkusz .xlsx i robi PDF dla wykonawcy."
+    "Agent czyta SKILL.md tylko jako inspirację, niczego nie kopiuje.",
+    "Pisze własny skill na openpyxl (MIT) i np. reportlab (BSD).",
+    "Przerabia wycenę z CSV na arkusz z formułami."
    ],
-   "prompt": "Przeczytaj skille xlsx i pdf z https://github.com/anthropics/skills (katalogi skills/xlsx i skills/pdf). Na ich podstawie zrób z /workspace/projekt-domu/02-wycena-budowy.csv arkusz Excel z formułami: sumy etapów, wariant min/średni/max, rezerwa 10%. Dodatkowo przygotuj PDF „Pakiet dla wykonawcy” z rzutami i wyceną. Zanim zapiszesz te skille na stałe, pokaż mi plan.",
-   "gwiazdki": 183873,
+   "prompt": "Przeczytaj skille xlsx i pdf z https://github.com/anthropics/skills tylko jako inspirację: mają licencję zastrzeżoną (All rights reserved), więc nie kopiuj z nich tekstu ani skryptów. Napisz własne podejście od zera na openpyxl (MIT): zrób z pliku projekt-domu/02-wycena-budowy.csv arkusz Excel z formułami (sumy etapów, wariant min/średni/max, rezerwa 10%) i sprawdź, czy formuły się przeliczają.",
+   "gwiazdki": 183875,
    "aktywnosc": "2026-10-09",
-   "licencja": "brak danych",
+   "licencja": "zastrzeżona (All rights reserved) – tylko jako wzór, nie kopiować",
    "opis_oryginalny": "Public repository for Agent Skills",
    "id": "pd__anthropics__skills",
    "tagi": [
@@ -1006,7 +1006,7 @@
     "Buduje harmonogram.json z etapów wyceny.",
     "Dodaje zakładkę „Harmonogram”, czytelną na iPhonie."
    ],
-   "prompt": "Na podstawie etapów z /workspace/projekt-domu/02-wycena-budowy.csv zrób harmonogram budowy (harmonogram.json: etap, start, koniec, zależności, % postępu) i dodaj na stronę Projektu Domu zakładkę „Harmonogram” z wykresem Frappe Gantt (https://github.com/frappe/gantt). Pliki biblioteki skopiuj do repo. Ma się dobrze przewijać na iPhonie. Terminy oznacz jako szacunkowe.",
+   "prompt": "Na podstawie etapów z projekt-domu/02-wycena-budowy.csv zrób harmonogram budowy (harmonogram.json: etap, start, koniec, zależności, % postępu) i dodaj na stronę Projektu Domu zakładkę „Harmonogram” z wykresem Frappe Gantt (https://github.com/frappe/gantt). Pliki biblioteki skopiuj do repo. Ma się dobrze przewijać na iPhonie. Terminy oznacz jako szacunkowe.",
    "gwiazdki": 6153,
    "aktywnosc": "2026-06-18",
    "licencja": "MIT",
@@ -1032,7 +1032,7 @@
     "Porównuje je z pomieszczenia.json i zakupy/*.csv.",
     "Przenosi dobre pomysły (wymiary mebli, linki, kontrola przejść) do własnego workflow."
    ],
-   "prompt": "Przeczytaj skill https://github.com/akseolabs-seo/interior-design-master (SKILL.md, kontrakty JSON, scripts). Porównaj jego metodę z tym, jak pracujesz w /workspace/projekt-domu (pomieszczenia.json, zakupy, wizualizacje). Wypisz po polsku 5 rzeczy, które warto przejąć, np. sprawdzanie wymiarów mebli i przejść. Niczego nie zmieniaj bez mojej zgody.",
+   "prompt": "Przeczytaj skill https://github.com/akseolabs-seo/interior-design-master (SKILL.md, kontrakty JSON, scripts). Porównaj jego metodę z tym, jak pracujesz w projekt-domu (pomieszczenia.json, zakupy, wizualizacje). Wypisz po polsku 5 rzeczy, które warto przejąć, np. sprawdzanie wymiarów mebli i przejść. Niczego nie zmieniaj bez mojej zgody.",
    "gwiazdki": 10,
    "aktywnosc": "2026-09-11",
    "licencja": "MIT",
@@ -1058,8 +1058,8 @@
     "Dopisuje eksport DXF do skryptu rzutów (rzuty-2d).",
     "Zapisuje warstwy: ściany, drzwi, okna, meble, wymiary."
    ],
-   "prompt": "Użyj biblioteki ezdxf (https://github.com/mozman/ezdxf), żeby z modelu rzutów w /workspace/projekt-domu/rzuty-2d wyeksportować rzut parteru i poddasza do DXF z warstwami: ściany, otwory, meble, wymiary, opisy. Sprawdź wynik, renderując DXF z powrotem do PNG. Nie zmieniaj istniejących plików SVG/PDF.",
-   "gwiazdki": 1495,
+   "prompt": "Użyj biblioteki ezdxf (https://github.com/mozman/ezdxf), żeby z modelu rzutów w projekt-domu/rzuty-2d wyeksportować rzut parteru i poddasza do DXF z warstwami: ściany, otwory, meble, wymiary, opisy. Sprawdź wynik, renderując DXF z powrotem do PNG. Nie zmieniaj istniejących plików SVG/PDF.",
+   "gwiazdki": 1496,
    "aktywnosc": "2026-10-20",
    "licencja": "MIT",
    "opis_oryginalny": "Python interface to DXF",
@@ -1084,8 +1084,8 @@
     "Wtyczka MCP działa w Blenderze z interfejsem, więc dodanie jej jako konektora to osobny krok.",
     "Prostsza droga: agent pisze skrypty bpy i renderuje GLB bez okna."
    ],
-   "prompt": "Oceń, czy na Twoim komputerze da się uruchomić Blendera (najlepiej bez okna, przez bpy) i wyrenderować salon z /workspace/projekt-domu/3d/parter-g2-v2.glb z kamerą jak w wizualizacji v1. Opisz, co dałby Blender MCP (https://github.com/ahujasid/mcp-for-blender) w porównaniu ze skryptami bpy. Nic nie instaluj, dopóki nie zatwierdzę planu.",
-   "gwiazdki": 32386,
+   "prompt": "Oceń, czy na Twoim komputerze da się uruchomić Blendera (najlepiej bez okna, przez bpy) i wyrenderować salon z projekt-domu/3d/parter-g2-v2.glb z kamerą jak w wizualizacji v1. Opisz, co dałby Blender MCP (https://github.com/ahujasid/mcp-for-blender) w porównaniu ze skryptami bpy. Nic nie instaluj, dopóki nie zatwierdzę planu.",
+   "gwiazdki": 32389,
    "aktywnosc": "2026-10-24",
    "licencja": "MIT",
    "opis_oryginalny": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
@@ -1111,7 +1111,7 @@
     "Stosuje je w skryptach renderujących."
    ],
    "prompt": "Przejrzyj https://github.com/EL4CTEO/blender-skills i wybierz skille przydatne do renderów wnętrz: światło dzienne, materiały PBR (drewno, płytki, tkaniny), kamera we wnętrzu. Streść mi je po polsku i zaproponuj, jak użyć ich przy wizualizacjach Projektu Domu.",
-   "gwiazdki": 516,
+   "gwiazdki": 518,
    "aktywnosc": "2026-10-19",
    "licencja": "MIT",
    "opis_oryginalny": "Professional Blender 5.2 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.",
@@ -1136,7 +1136,7 @@
     "Agent łączy się z http://127.0.0.1:9877/mcp.",
     "Na start buduje jeden pokój z pomieszczenia.json."
    ],
-   "prompt": "Oceń, czy można uruchomić Sweet Home 3D z wtyczką https://github.com/grimashevich/sweethome3d-mcp-server na Twoim komputerze (Linux z pulpitem) i zbudować w nim pokój 2-06 z /workspace/projekt-domu/pomieszczenia.json. Najpierw pokaż mi plan i ryzyka, nic jeszcze nie instaluj.",
+   "prompt": "Oceń, czy można uruchomić Sweet Home 3D z wtyczką https://github.com/grimashevich/sweethome3d-mcp-server na Twoim komputerze (Linux z pulpitem) i zbudować w nim pokój 2-06 z projekt-domu/pomieszczenia.json. Najpierw pokaż mi plan i ryzyka, nic jeszcze nie instaluj.",
    "gwiazdki": 69,
    "aktywnosc": "2026-10-21",
    "licencja": "GPL-2.0",
@@ -1162,7 +1162,7 @@
     "Sprawdza polską kolekcję i licencję danych.",
     "Porównuje kilka pozycji z wyceną (np. ławy, ściany)."
    ],
-   "prompt": "Przeczytaj https://github.com/datadrivenconstruction/OpenConstructionEstimate-DDC-CWICR (README, DATA_DICTIONARY, polska kolekcja). Sprawdź licencję danych i skąd pochodzą stawki dla Polski. Potem porównaj 5 pozycji z /workspace/projekt-domu/02-wycena-budowy.csv (ławy, ściany Porotherm, strop, tynki, wylewki) i pokaż różnice w tabeli.",
+   "prompt": "Przeczytaj https://github.com/datadrivenconstruction/OpenConstructionEstimate-DDC-CWICR (README, DATA_DICTIONARY, polska kolekcja). Sprawdź licencję danych i skąd pochodzą stawki dla Polski. Potem porównaj 5 pozycji z projekt-domu/02-wycena-budowy.csv (ławy, ściany Porotherm, strop, tynki, wylewki) i pokaż różnice w tabeli.",
    "gwiazdki": 257,
    "aktywnosc": "2026-08-21",
    "licencja": "inna / niestandardowa",
@@ -1200,13 +1200,117 @@
    ],
    "zrodlo": "GitHub",
    "top": false
+  },
+  {
+   "repo": "donmccurdy/glTF-Transform",
+   "kategoria": "Narzędzia CLI",
+   "nazwa": "glTF-Transform – kompresja GLB do spaceru",
+   "ocena": 9,
+   "trudnosc": "łatwa",
+   "opis": "Biblioteka i CLI do obróbki plików glTF/GLB: optymalizacja, kompresja geometrii (meshopt, Draco) i tekstur (KTX2, WebP), usuwanie duplikatów.",
+   "dlaczego": "Model z wypieczonym światłem jest ciężki. Jedna komenda optimize zmniejsza go wielokrotnie, więc spacer szybciej się ładuje na iPhonie.",
+   "kroki": [
+    "Agent uruchamia CLI przez npx na swoim komputerze.",
+    "Kompresuje GLB (meshopt + KTX2 lub WebP).",
+    "Porównuje rozmiar i wygląd przed i po."
+   ],
+   "prompt": "Użyj glTF-Transform (https://github.com/donmccurdy/glTF-Transform), żeby zoptymalizować GLB spaceru: npx @gltf-transform/cli optimize wejscie.glb wyjscie.glb --compress meshopt --texture-compress ktx2 (bez narzędzia ktx użyj webp). Pokaż tabelę rozmiarów przed i po oraz zrzut z three.js, żeby sprawdzić, czy lightmapy nie straciły jakości. W three.js dodaj MeshoptDecoder i KTX2Loader.",
+   "gwiazdki": 2004,
+   "aktywnosc": "2026-10-20",
+   "licencja": "MIT",
+   "opis_oryginalny": "glTF 2.0 SDK for JavaScript and TypeScript, on Web and Node.js.",
+   "url": "https://github.com/donmccurdy/glTF-Transform",
+   "id": "pd__donmccurdy__glTF-Transform",
+   "tagi": [
+    "Projekt Domu"
+   ],
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "mistic100/Photo-Sphere-Viewer",
+   "kategoria": "Dashboardy HTML",
+   "nazwa": "Photo Sphere Viewer – panoramy 360 z hotspotami",
+   "ocena": 9,
+   "trudnosc": "łatwa",
+   "opis": "Biblioteka JS do panoram 360 z wtyczkami: Virtual Tour (przejścia między punktami), Markers (hotspoty), Gyroscope, Map i Plan.",
+   "dlaczego": "Panoramy z Cycles zamienia w spacer od pokoju do pokoju z hotspotami i żyroskopem na iPhonie. Działa na statycznej stronie.",
+   "kroki": [
+    "Agent kopiuje pliki biblioteki do repo (bez CDN).",
+    "Opisuje w JSON punkty: panorama, połączenia, hotspoty.",
+    "Testuje na widoku iPhone'a."
+   ],
+   "prompt": "Zbuduj tour panoram 360 na Photo Sphere Viewer (https://github.com/mistic100/Photo-Sphere-Viewer) z wtyczkami virtual-tour, markers i gyroscope. Pliki biblioteki skopiuj do repo strony, bez CDN. Punkty i przejścia między pokojami opisz w tour.json, a na każdej panoramie dodaj hotspoty z nazwą materiału. Sprawdź na iPhonie 390×844.",
+   "gwiazdki": 2401,
+   "aktywnosc": "2026-10-25",
+   "licencja": "MIT",
+   "opis_oryginalny": "A JavaScript library to display 360° sphere panoramas.",
+   "url": "https://github.com/mistic100/Photo-Sphere-Viewer",
+   "id": "pd__mistic100__Photo-Sphere-Viewer",
+   "tagi": [
+    "Projekt Domu"
+   ],
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "sparkjsdev/spark",
+   "kategoria": "Dashboardy HTML",
+   "nazwa": "Spark – Gaussian splatting w three.js",
+   "ocena": 7,
+   "trudnosc": "trudna",
+   "opis": "Renderer Gaussian splattingu dla three.js: wyświetla fotorealistyczne sceny ze splatów (.ply, .spz, .splat) razem ze zwykłymi obiektami 3D.",
+   "dlaczego": "Daje fotorealizm, którego nie da zwykły GLB. Splat trzeba jednak najpierw wytrenować z wielu renderów (np. gsplat na GPU NVIDIA).",
+   "kroki": [
+    "Agent sprawdza, czy ma GPU do treningu splatów.",
+    "Na początek testuje Spark z przykładowym splatem.",
+    "Ocenia płynność i wagę pliku na iPhonie."
+   ],
+   "prompt": "Oceń Spark (https://github.com/sparkjsdev/spark) do spaceru po domu: zrób testową stronę three.js z przykładowym splatem z repo i joystickiem, a potem zmierz FPS i rozmiar pliku w widoku iPhone'a. Opisz, jak z renderów Cycles z wielu kamer zrobić własny splat (np. gsplat, Apache-2.0, wymaga GPU NVIDIA) i czy da się to zrobić na Twoim komputerze.",
+   "gwiazdki": 3810,
+   "aktywnosc": "2026-10-20",
+   "licencja": "MIT",
+   "opis_oryginalny": ":sparkles:  An advanced 3D Gaussian Splatting renderer for THREE.js",
+   "url": "https://github.com/sparkjsdev/spark",
+   "id": "pd__sparkjsdev__spark",
+   "tagi": [
+    "Projekt Domu"
+   ],
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "gkjohnson/three-mesh-bvh",
+   "kategoria": "Narzędzia CLI",
+   "nazwa": "three-mesh-bvh – kolizje do chodzenia FPS",
+   "ocena": 8,
+   "trudnosc": "średnia",
+   "opis": "Szybki raycasting i kolizje dla three.js (BVH). W repo jest przykład characterMovement z kapsułą gracza.",
+   "dlaczego": "Dzięki niemu chodzenie joystickiem nie przechodzi przez ściany i meble, a działa płynnie na telefonie. Dobrze łączy się z joystickiem nipplejs (MIT).",
+   "kroki": [
+    "Agent czyta przykład characterMovement.",
+    "Dodaje kolizje kapsuły z modelem domu.",
+    "Łączy je z joystickiem nipplejs."
+   ],
+   "prompt": "Na podstawie przykładu characterMovement z https://github.com/gkjohnson/three-mesh-bvh dodaj do spaceru three.js kolizje kapsuły gracza (wysokość oczu 1,65 m) ze ścianami i meblami. Do chodzenia użyj joysticka nipplejs (https://github.com/yoannmoinet/nipplejs, MIT), a do rozglądania przeciągania prawą stroną ekranu. Bibliotek nie ładuj z CDN, a całość przetestuj w widoku iPhone'a.",
+   "gwiazdki": 3528,
+   "aktywnosc": "2026-10-22",
+   "licencja": "MIT",
+   "opis_oryginalny": "A BVH implementation to speed up raycasting and enable spatial queries against three.js meshes.",
+   "url": "https://github.com/gkjohnson/three-mesh-bvh",
+   "id": "pd__gkjohnson__three-mesh-bvh",
+   "tagi": [
+    "Projekt Domu"
+   ],
+   "zrodlo": "GitHub",
+   "top": false
   }
  ],
  "top5_projekt_domu": [
   "pd__google__model-viewer",
-  "pd__anthropics__skills",
+  "pd__donmccurdy__glTF-Transform",
+  "pd__mistic100__Photo-Sphere-Viewer",
   "pd__frappe__gantt",
-  "pd__akseolabs-seo__interior-design-master",
   "pd__mozman__ezdxf"
  ]
 }
