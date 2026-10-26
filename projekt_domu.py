@@ -78,6 +78,21 @@ PD = [
   dlaczego="Dzięki niemu chodzenie joystickiem nie przechodzi przez ściany i meble, a działa płynnie na telefonie. Dobrze łączy się z joystickiem nipplejs (MIT).",
   kroki=["Agent czyta przykład characterMovement.","Dodaje kolizje kapsuły z modelem domu.","Łączy je z joystickiem nipplejs."],
   prompt="Na podstawie przykładu characterMovement z https://github.com/gkjohnson/three-mesh-bvh dodaj do spaceru three.js kolizje kapsuły gracza (wysokość oczu 1,65 m) ze ścianami i meblami. Do chodzenia użyj joysticka nipplejs (https://github.com/yoannmoinet/nipplejs, MIT), a do rozglądania przeciągania prawą stroną ekranu. Bibliotek nie ładuj z CDN, a całość przetestuj w widoku iPhone'a."),
+ dict(repo="VAST-AI-Research/TripoSR", kategoria="Narzędzia CLI", nazwa="TripoSR – zdjęcie mebla → model 3D (CPU)", ocena=7, trudnosc="średnia",
+  opis="Z jednego zdjęcia produktu tworzy siatkę 3D (OBJ/GLB). Kod i wagi są na licencji MIT (1,7 GB). Bez GPU automatycznie przełącza się na CPU: działa wolniej, ale działa.",
+  dlaczego="Daje zastępczy model mebla, którego producent nie udostępnia w 3D. Kształt jest przybliżony, więc to nie 1:1, ale wystarcza do aranżacji i spaceru.",
+  kroki=["Agent zmierzy czas na jednym zdjęciu na CPU.","Usuwa tło (rembg, MIT).","Skaluje siatkę do wymiarów z karty produktu."],
+  prompt="Zainstaluj TripoSR (https://github.com/VAST-AI-Research/TripoSR, kod i wagi MIT) w osobnym venv, na CPU (--device cpu). Najpierw zmierz czas i zużycie RAM na jednym zdjęciu produktu. Wygeneruj GLB (--model-save-format glb), przeskaluj go do wymiarów szer./gł./wys. z karty produktu i zapisz razem z nazwą produktu i linkiem do sklepu. Nie używaj modeli z licencją niekomercyjną."),
+ dict(repo="facebookresearch/dinov2", kategoria="Narzędzia CLI", nazwa="DINOv2 – czy render wygląda jak produkt ze sklepu", ocena=8, trudnosc="łatwa",
+  opis="Model wizji od Meta. Kod i wagi są na licencji Apache-2.0, wersja small ma 88 MB i działa szybko na CPU. Porównuje dwa obrazy po kształcie i fakturze.",
+  dlaczego="Automatycznie sprawdza, czy mebel w wizualizacji jest podobny do zdjęcia produktu: daje wynik 0–1 i pozwala zrobić listę najsłabszych dopasowań.",
+  kroki=["Agent liczy embedding zdjęcia ze sklepu i renderu.","Wylicza podobieństwo cosinusowe.","Robi raport z najsłabszymi meblami."],
+  prompt="Użyj facebook/dinov2-small (Apache-2.0, CPU) z transformers. Dla każdej pary (zdjęcie produktu ze sklepu, wycinek renderu z tym meblem) policz podobieństwo cosinusowe embeddingów CLS. Zapisz CSV: produkt, link, wynik. Pokaż 5 najsłabszych dopasowań z obrazkami obok siebie."),
+ dict(repo="mlfoundations/open_clip", licencja_stala="MIT (kod) / MIT (wagi LAION ViT-B-32)", kategoria="Narzędzia CLI", nazwa="OpenCLIP – szukanie produktu po zdjęciu lub opisie", ocena=7, trudnosc="łatwa",
+  opis="Otwarta implementacja CLIP. Wagi laion/CLIP-ViT-B-32-laion2B (MIT, 605 MB) działają na CPU. Porównuje obraz z obrazem i obraz z tekstem.",
+  dlaczego="Pozwala znaleźć wśród zapisanych linków produkt najbliższy wycinkowi z wizualizacji albo opisowi typu „szara sofa narożna”.",
+  kroki=["Agent indeksuje zdjęcia produktów.","Wyszukuje po tekście lub obrazie.","Zwraca top 3 z linkami."],
+  prompt="Użyj open_clip z wagami laion2b_s34b_b79k dla ViT-B-32 (MIT, CPU). Zbuduj lokalny indeks embeddingów zdjęć produktów z mojej listy zakupów, a potem dla zapytania tekstowego lub wycinka renderu zwróć 3 najbliższe produkty z linkiem i wynikiem podobieństwa. Nie używaj wag openai bez licencji."),
 ]
 def projekt_domu_items():
     out=[]

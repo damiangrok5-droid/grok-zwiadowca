@@ -1,7 +1,7 @@
 {
  "tytul": "Zwiadowca Rozwiązań",
  "data_zwiadu": "2026-10-26",
- "wygenerowano": "2026-10-26T11:07Z",
+ "wygenerowano": "2026-10-26T14:18Z",
  "zrodla": [
   "GitHub API (gh api repos/…, search/repositories)",
   "Hacker News (Algolia API)",
@@ -982,7 +982,7 @@
     "Przerabia wycenę z CSV na arkusz z formułami."
    ],
    "prompt": "Przeczytaj skille xlsx i pdf z https://github.com/anthropics/skills tylko jako inspirację: mają licencję zastrzeżoną (All rights reserved), więc nie kopiuj z nich tekstu ani skryptów. Napisz własne podejście od zera na openpyxl (MIT): zrób z pliku projekt-domu/02-wycena-budowy.csv arkusz Excel z formułami (sumy etapów, wariant min/średni/max, rezerwa 10%) i sprawdź, czy formuły się przeliczają.",
-   "gwiazdki": 183875,
+   "gwiazdki": 183911,
    "aktywnosc": "2026-10-09",
    "licencja": "zastrzeżona (All rights reserved) – tylko jako wzór, nie kopiować",
    "opis_oryginalny": "Public repository for Agent Skills",
@@ -1085,7 +1085,7 @@
     "Prostsza droga: agent pisze skrypty bpy i renderuje GLB bez okna."
    ],
    "prompt": "Oceń, czy na Twoim komputerze da się uruchomić Blendera (najlepiej bez okna, przez bpy) i wyrenderować salon z projekt-domu/3d/parter-g2-v2.glb z kamerą jak w wizualizacji v1. Opisz, co dałby Blender MCP (https://github.com/ahujasid/mcp-for-blender) w porównaniu ze skryptami bpy. Nic nie instaluj, dopóki nie zatwierdzę planu.",
-   "gwiazdki": 32389,
+   "gwiazdki": 32402,
    "aktywnosc": "2026-10-24",
    "licencja": "MIT",
    "opis_oryginalny": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
@@ -1111,7 +1111,7 @@
     "Stosuje je w skryptach renderujących."
    ],
    "prompt": "Przejrzyj https://github.com/EL4CTEO/blender-skills i wybierz skille przydatne do renderów wnętrz: światło dzienne, materiały PBR (drewno, płytki, tkaniny), kamera we wnętrzu. Streść mi je po polsku i zaproponuj, jak użyć ich przy wizualizacjach Projektu Domu.",
-   "gwiazdki": 518,
+   "gwiazdki": 521,
    "aktywnosc": "2026-10-19",
    "licencja": "MIT",
    "opis_oryginalny": "Professional Blender 5.2 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.",
@@ -1137,7 +1137,7 @@
     "Na start buduje jeden pokój z pomieszczenia.json."
    ],
    "prompt": "Oceń, czy można uruchomić Sweet Home 3D z wtyczką https://github.com/grimashevich/sweethome3d-mcp-server na Twoim komputerze (Linux z pulpitem) i zbudować w nim pokój 2-06 z projekt-domu/pomieszczenia.json. Najpierw pokaż mi plan i ryzyka, nic jeszcze nie instaluj.",
-   "gwiazdki": 69,
+   "gwiazdki": 70,
    "aktywnosc": "2026-10-21",
    "licencja": "GPL-2.0",
    "opis_oryginalny": "Sweet Home 3D plugin that embeds an MCP server — lets Claude control Sweet Home 3D over HTTP",
@@ -1189,7 +1189,7 @@
     "Eksportuje do STEP/DXF dla stolarza."
    ],
    "prompt": "Oceń, czy przy pomocy FreeCAD MCP (https://github.com/neka-nat/freecad-mcp) lub skryptów FreeCAD w Pythonie na Twoim komputerze możesz zaprojektować na wymiar zabudowę garderoby 2/04 z Projektu Domu i wyeksportować rysunek dla stolarza. Pokaż plan, nic jeszcze nie instaluj.",
-   "gwiazdki": 3065,
+   "gwiazdki": 3066,
    "aktywnosc": "2026-10-25",
    "licencja": "MIT",
    "opis_oryginalny": "FreeCAD MCP(Model Context Protocol) server",
@@ -1215,7 +1215,7 @@
     "Porównuje rozmiar i wygląd przed i po."
    ],
    "prompt": "Użyj glTF-Transform (https://github.com/donmccurdy/glTF-Transform), żeby zoptymalizować GLB spaceru: npx @gltf-transform/cli optimize wejscie.glb wyjscie.glb --compress meshopt --texture-compress ktx2 (bez narzędzia ktx użyj webp). Pokaż tabelę rozmiarów przed i po oraz zrzut z three.js, żeby sprawdzić, czy lightmapy nie straciły jakości. W three.js dodaj MeshoptDecoder i KTX2Loader.",
-   "gwiazdki": 2004,
+   "gwiazdki": 2008,
    "aktywnosc": "2026-10-20",
    "licencja": "MIT",
    "opis_oryginalny": "glTF 2.0 SDK for JavaScript and TypeScript, on Web and Node.js.",
@@ -1299,6 +1299,84 @@
    "opis_oryginalny": "A BVH implementation to speed up raycasting and enable spatial queries against three.js meshes.",
    "url": "https://github.com/gkjohnson/three-mesh-bvh",
    "id": "pd__gkjohnson__three-mesh-bvh",
+   "tagi": [
+    "Projekt Domu"
+   ],
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "VAST-AI-Research/TripoSR",
+   "kategoria": "Narzędzia CLI",
+   "nazwa": "TripoSR – zdjęcie mebla → model 3D (CPU)",
+   "ocena": 7,
+   "trudnosc": "średnia",
+   "opis": "Z jednego zdjęcia produktu tworzy siatkę 3D (OBJ/GLB). Kod i wagi są na licencji MIT (1,7 GB). Bez GPU automatycznie przełącza się na CPU: działa wolniej, ale działa.",
+   "dlaczego": "Daje zastępczy model mebla, którego producent nie udostępnia w 3D. Kształt jest przybliżony, więc to nie 1:1, ale wystarcza do aranżacji i spaceru.",
+   "kroki": [
+    "Agent zmierzy czas na jednym zdjęciu na CPU.",
+    "Usuwa tło (rembg, MIT).",
+    "Skaluje siatkę do wymiarów z karty produktu."
+   ],
+   "prompt": "Zainstaluj TripoSR (https://github.com/VAST-AI-Research/TripoSR, kod i wagi MIT) w osobnym venv, na CPU (--device cpu). Najpierw zmierz czas i zużycie RAM na jednym zdjęciu produktu. Wygeneruj GLB (--model-save-format glb), przeskaluj go do wymiarów szer./gł./wys. z karty produktu i zapisz razem z nazwą produktu i linkiem do sklepu. Nie używaj modeli z licencją niekomercyjną.",
+   "gwiazdki": 7230,
+   "aktywnosc": "2026-06-04",
+   "licencja": "MIT",
+   "opis_oryginalny": "TripoSR: Fast 3D Object Reconstruction from a Single Image",
+   "url": "https://github.com/VAST-AI-Research/TripoSR",
+   "id": "pd__VAST-AI-Research__TripoSR",
+   "tagi": [
+    "Projekt Domu"
+   ],
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "facebookresearch/dinov2",
+   "kategoria": "Narzędzia CLI",
+   "nazwa": "DINOv2 – czy render wygląda jak produkt ze sklepu",
+   "ocena": 8,
+   "trudnosc": "łatwa",
+   "opis": "Model wizji od Meta. Kod i wagi są na licencji Apache-2.0, wersja small ma 88 MB i działa szybko na CPU. Porównuje dwa obrazy po kształcie i fakturze.",
+   "dlaczego": "Automatycznie sprawdza, czy mebel w wizualizacji jest podobny do zdjęcia produktu: daje wynik 0–1 i pozwala zrobić listę najsłabszych dopasowań.",
+   "kroki": [
+    "Agent liczy embedding zdjęcia ze sklepu i renderu.",
+    "Wylicza podobieństwo cosinusowe.",
+    "Robi raport z najsłabszymi meblami."
+   ],
+   "prompt": "Użyj facebook/dinov2-small (Apache-2.0, CPU) z transformers. Dla każdej pary (zdjęcie produktu ze sklepu, wycinek renderu z tym meblem) policz podobieństwo cosinusowe embeddingów CLS. Zapisz CSV: produkt, link, wynik. Pokaż 5 najsłabszych dopasowań z obrazkami obok siebie.",
+   "gwiazdki": 13475,
+   "aktywnosc": "2026-10-06",
+   "licencja": "Apache-2.0",
+   "opis_oryginalny": "PyTorch code and models for the DINOv2 self-supervised learning method.",
+   "url": "https://github.com/facebookresearch/dinov2",
+   "id": "pd__facebookresearch__dinov2",
+   "tagi": [
+    "Projekt Domu"
+   ],
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "mlfoundations/open_clip",
+   "kategoria": "Narzędzia CLI",
+   "nazwa": "OpenCLIP – szukanie produktu po zdjęciu lub opisie",
+   "ocena": 7,
+   "trudnosc": "łatwa",
+   "opis": "Otwarta implementacja CLIP. Wagi laion/CLIP-ViT-B-32-laion2B (MIT, 605 MB) działają na CPU. Porównuje obraz z obrazem i obraz z tekstem.",
+   "dlaczego": "Pozwala znaleźć wśród zapisanych linków produkt najbliższy wycinkowi z wizualizacji albo opisowi typu „szara sofa narożna”.",
+   "kroki": [
+    "Agent indeksuje zdjęcia produktów.",
+    "Wyszukuje po tekście lub obrazie.",
+    "Zwraca top 3 z linkami."
+   ],
+   "prompt": "Użyj open_clip z wagami laion2b_s34b_b79k dla ViT-B-32 (MIT, CPU). Zbuduj lokalny indeks embeddingów zdjęć produktów z mojej listy zakupów, a potem dla zapytania tekstowego lub wycinka renderu zwróć 3 najbliższe produkty z linkiem i wynikiem podobieństwa. Nie używaj wag openai bez licencji.",
+   "gwiazdki": 14222,
+   "aktywnosc": "2026-10-24",
+   "licencja": "MIT (kod) / MIT (wagi LAION ViT-B-32)",
+   "opis_oryginalny": "An open source implementation of CLIP.",
+   "url": "https://github.com/mlfoundations/open_clip",
+   "id": "pd__mlfoundations__open_clip",
    "tagi": [
     "Projekt Domu"
    ],
