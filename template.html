@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zwiadowca Rozwiązań · Damian</title>
+<meta name="description" content="Najciekawsze serwery MCP, skille, prompty i automatyzacje do wykorzystania z Grok Botem">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Zwiadowca">
+<meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔭</text></svg>">
+<style>
+:root{
+  --bg:#f2f2f7; --card:rgba(255,255,255,.72); --stroke:rgba(0,0,0,.07);
+  --text:#1c1c1e; --muted:#6e6e73; --accent:#0a84ff; --accent2:#5e5ce6; --green:#30d158; --orange:#ff9f0a; --red:#ff453a; --yellow:#ffcc00;
+  --field:rgba(118,118,128,.12); --on:#fff; --shadow:0 1px 2px rgba(0,0,0,.04),0 8px 28px rgba(0,0,0,.06); color-scheme:light;
+}
+:root[data-theme="dark"]{ --bg:#000; --card:rgba(28,28,30,.66); --stroke:rgba(255,255,255,.08);
+  --text:#f5f5f7; --muted:#98989f; --field:rgba(118,118,128,.24); --on:#636366; --shadow:0 8px 30px rgba(0,0,0,.45); color-scheme:dark;}
+@media (prefers-color-scheme: dark){
+  :root[data-theme="auto"]{ --bg:#000; --card:rgba(28,28,30,.66); --stroke:rgba(255,255,255,.08);
+    --text:#f5f5f7; --muted:#98989f; --field:rgba(118,118,128,.24); --on:#636366; --shadow:0 8px 30px rgba(0,0,0,.45); color-scheme:dark;}
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--text);background:var(--bg);min-height:100vh;-webkit-font-smoothing:antialiased;
+  padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);}
+body::before{content:"";position:fixed;inset:-20%;z-index:-1;pointer-events:none;
+  background:radial-gradient(40% 35% at 15% 10%,rgba(10,132,255,.22),transparent 70%),
+             radial-gradient(35% 30% at 90% 20%,rgba(94,92,230,.20),transparent 70%),
+             radial-gradient(40% 40% at 60% 100%,rgba(48,209,88,.12),transparent 70%);}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 18px 48px}
+header{display:flex;align-items:center;gap:14px;margin:14px 0 6px}
+.logo{width:52px;height:52px;border-radius:14px;flex:none;display:grid;place-items:center;font-size:26px;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 6px 18px rgba(10,132,255,.35)}
+.eyebrow{font-size:13px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+h1{font-size:32px;line-height:1.1;margin:2px 0 0;font-weight:800;letter-spacing:-.02em}
+h2{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:26px 0 10px}
+.glass{background:var(--card);border:1px solid var(--stroke);backdrop-filter:blur(24px) saturate(160%);-webkit-backdrop-filter:blur(24px) saturate(160%);box-shadow:var(--shadow)}
+.themebtn{margin-left:auto;flex:none;width:44px;height:44px;border-radius:50%;border:1px solid var(--stroke);background:var(--card);
+  color:var(--text);font-size:19px;cursor:pointer;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.sub{color:var(--muted);font-size:15px;line-height:1.45;margin:8px 0 0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0 0}
+.stat{border-radius:18px;padding:12px 14px}
+.stat b{display:block;font-size:24px;font-weight:700;letter-spacing:-.02em}
+.stat span{font-size:12px;color:var(--muted)}
+.top5{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 12px;margin:0 -2px}
+.top5::-webkit-scrollbar{display:none}
+.tcard{scroll-snap-align:start;border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:8px;cursor:pointer;color:var(--text);text-align:left;font:inherit}
+.rank{font-size:12px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--orange),var(--red));border-radius:999px;padding:4px 9px;align-self:flex-start}
+.tcard .title{font-size:17px}
+.tcard p{margin:0;font-size:14px;line-height:1.4;color:var(--muted)}
+.toolbar{position:sticky;top:0;z-index:5;padding:10px 0 8px;margin:0 -18px;padding-left:18px;padding-right:18px;
+  backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);
+  background:color-mix(in srgb,var(--bg) 70%,transparent);display:flex;flex-direction:column;gap:8px}
+.row{display:flex;gap:8px;align-items:center}
+.search{flex:1;display:flex;align-items:center;gap:8px;background:var(--field);border-radius:12px;padding:0 12px;height:44px}
+.search svg{flex:none;opacity:.55}
+.search input{flex:1;border:0;outline:0;background:transparent;color:var(--text);font-size:17px;font-family:inherit;min-width:0}
+select{height:44px;border-radius:12px;border:0;background:var(--field);color:var(--text);font:600 14px inherit;font-family:inherit;padding:0 8px;flex:none;max-width:120px;-webkit-appearance:none;appearance:none}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;height:36px;padding:0 14px;border-radius:999px;border:0;background:var(--field);color:var(--text);font:600 14px inherit;font-family:inherit;cursor:pointer;white-space:nowrap}
+.chip.on{background:var(--accent);color:#fff}
+.chip small{opacity:.7;font-weight:600;margin-left:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;margin-top:10px}
+.card{position:relative;border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:12px;animation:in .4s ease both;scroll-margin-top:150px}
+.card.flash{box-shadow:0 0 0 3px var(--accent),var(--shadow)}
+.card.arch{opacity:.6}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.topl{display:flex;gap:12px;align-items:flex-start}
+.ic{width:48px;height:48px;border-radius:13px;flex:none;display:grid;place-items:center;font-size:23px;color:#fff}
+.title{font-size:18px;font-weight:700;letter-spacing:-.01em;margin:2px 0 3px;line-height:1.25}
+.slug{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--muted);word-break:break-all}
+.score{margin-left:auto;flex:none;text-align:center;min-width:48px;padding:6px 8px;border-radius:14px;background:var(--field)}
+.score b{display:block;font-size:20px;line-height:1;font-weight:800}
+.score span{font-size:10px;color:var(--muted);font-weight:600}
+.s-hi b{color:var(--green)} .s-mid b{color:var(--orange)} .s-lo b{color:var(--muted)}
+.desc{font-size:15px;line-height:1.45;margin:0;opacity:.88}
+.why{font-size:14px;line-height:1.4;margin:0;color:var(--muted)}
+.why b{color:var(--text)}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12px;font-weight:600;padding:5px 9px;border-radius:999px;background:var(--field);color:var(--muted)}
+.tag.cat{color:var(--accent);background:rgba(10,132,255,.12)}
+.tag.d-łatwa{color:var(--green);background:rgba(48,209,88,.14)}
+.tag.d-średnia{color:var(--orange);background:rgba(255,159,10,.14)}
+.tag.d-trudna{color:var(--red);background:rgba(255,69,58,.13)}
+details{border-radius:14px;background:var(--field)}
+summary{list-style:none;cursor:pointer;min-height:44px;display:flex;align-items:center;padding:0 14px;font-weight:700;font-size:15px;color:var(--accent)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"›";margin-left:auto;font-size:22px;transition:transform .2s}
+details[open] summary::after{transform:rotate(90deg)}
+.how{padding:0 14px 14px;font-size:14px;line-height:1.45}
+.how ol{margin:0 0 10px;padding-left:20px}
+.prompt{white-space:pre-wrap;font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace;background:var(--card);border:1px solid var(--stroke);border-radius:12px;padding:10px 12px;margin:0 0 10px;user-select:text;-webkit-user-select:text}
+.btn{display:flex;align-items:center;justify-content:center;gap:7px;min-height:44px;border-radius:12px;text-decoration:none;border:0;cursor:pointer;
+  font:600 15px inherit;font-family:inherit;transition:transform .1s;padding:0 14px}
+.btn:active{transform:scale(.97)}
+.primary{background:var(--accent);color:#fff;width:100%}
+.primary.ok{background:var(--green)}
+.acts{display:grid;grid-template-columns:1fr 44px 44px 44px;gap:8px}
+.ghost{background:var(--field);color:var(--accent)}
+.tog{background:var(--field);color:var(--muted);padding:0;font-size:19px}
+.tog.on.fav{color:var(--yellow);background:rgba(255,204,0,.16)}
+.tog.on.tried{color:var(--green);background:rgba(48,209,88,.16)}
+.tog.on.arc{color:var(--orange);background:rgba(255,159,10,.16)}
+.empty,.note{text-align:center;color:var(--muted);padding:40px 10px;font-size:15px}
+.note{padding:22px 10px 0;font-size:12px;line-height:1.5}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(20px);opacity:0;
+  background:rgba(28,28,30,.92);color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;font-size:15px;transition:.25s;pointer-events:none;z-index:20}
+.toast.show{opacity:1;transform:translateX(-50%)}
+@media (max-width:560px){
+  h1{font-size:28px} .stats{grid-template-columns:repeat(2,1fr)} .stat b{font-size:20px}
+  .grid{grid-template-columns:1fr} .top5{grid-auto-columns:82%}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🔭</div>
+    <div>
+      <div class="eyebrow">Grok Bot · zwiad</div>
+      <h1>Zwiadowca Rozwiązań</h1>
+    </div>
+    <button class="themebtn" id="theme" aria-label="Zmień motyw" title="Motyw">◐</button>
+  </header>
+  <p class="sub">Serwery MCP, skille, prompty, szablony agentów i automatyzacje, które możesz skopiować do pracy z Grok Botem. Przy każdej pozycji jest gotowy prompt do wklejenia.</p>
+
+  <div class="stats">
+    <div class="stat glass"><b id="sTotal">–</b><span>Znaleziska</span></div>
+    <div class="stat glass"><b id="sFav">–</b><span>Ulubione</span></div>
+    <div class="stat glass"><b id="sTried">–</b><span>Wypróbowane</span></div>
+    <div class="stat glass"><b id="sDate">–</b><span>Data zwiadu</span></div>
+  </div>
+
+  <h2>⭐ Top 5 na start</h2>
+  <div class="top5" id="top5"></div>
+
+  <h2>Wszystkie znaleziska</h2>
+  <div class="toolbar">
+    <div class="row">
+      <label class="search">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Szukaj" autocomplete="off" enterkeyhint="search">
+      </label>
+      <select id="sort" aria-label="Sortowanie">
+        <option value="ocena">Przydatność</option>
+        <option value="gwiazdki">Gwiazdki</option>
+        <option value="data">Aktywność</option>
+        <option value="trudnosc">Najłatwiejsze</option>
+      </select>
+    </div>
+    <div class="chips" id="status"></div>
+    <div class="chips" id="cats"></div>
+  </div>
+
+  <div id="grid" class="grid"></div>
+  <div id="note" class="note"></div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script id="embedded" type="application/json">__DATA__</script>
+<script>
+const LS = "zwiadowca.v1";
+const st = Object.assign({fav:{},tried:{},arc:{},theme:"auto"}, JSON.parse(localStorage.getItem(LS)||"{}"));
+const save = () => localStorage.setItem(LS, JSON.stringify(st));
+let DATA = JSON.parse(document.getElementById("embedded").textContent);
+let cat = "Wszystkie", status = "aktywne";
+const ICON = {"Serwery MCP":"🔌","Skille":"🧩","Prompty":"💬","Szablony agentów":"🤖","Automatyzacje":"⏱️","Narzędzia CLI":"⌨️","Dashboardy HTML":"📊","Workflow multi-agent":"🕸️","Poradniki":"📖"};
+const GRADS = {"Serwery MCP":["#0a84ff","#5e5ce6"],"Skille":["#bf5af2","#ff375f"],"Prompty":["#ff9f0a","#ff375f"],"Szablony agentów":["#30d158","#0a84ff"],
+  "Automatyzacje":["#64d2ff","#5e5ce6"],"Narzędzia CLI":["#8e8e93","#3a3a3c"],"Dashboardy HTML":["#ff453a","#ff9f0a"],"Workflow multi-agent":["#5e5ce6","#bf5af2"],"Poradniki":["#30d158","#64d2ff"]};
+const DIFF = {"łatwa":1,"średnia":2,"trudna":3};
+const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmtN = n => n==null ? "brak danych" : n>=1000 ? (n/1000).toFixed(n>=10000?0:1).replace(".",",")+" tys." : String(n);
+const fmtD = d => d ? new Date(d+"T12:00:00Z").toLocaleDateString("pl-PL",{day:"numeric",month:"short",year:"numeric"}) : "brak danych";
+
+function applyTheme(){
+  document.documentElement.dataset.theme = st.theme;
+  document.getElementById("theme").textContent = {auto:"◐",light:"☀️",dark:"🌙"}[st.theme];
+  document.getElementById("theme").title = {auto:"Motyw: automatycznie",light:"Motyw: jasny",dark:"Motyw: ciemny"}[st.theme];
+}
+document.getElementById("theme").onclick = () => {
+  st.theme = {auto:"light",light:"dark",dark:"auto"}[st.theme]; save(); applyTheme();
+  toast({auto:"Motyw: automatycznie (wg systemu)",light:"Motyw: jasny",dark:"Motyw: ciemny"}[st.theme]);
+};
+let tt; function toast(t){const e=document.getElementById("toast");e.textContent=t;e.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>e.classList.remove("show"),1600);}
+
+function card(it,i){
+  const [c1,c2] = GRADS[it.kategoria]||["#0a84ff","#5e5ce6"];
+  const sc = it.ocena>=8?"s-hi":it.ocena>=6?"s-mid":"s-lo";
+  const pop = it.gwiazdki!=null ? `⭐ ${fmtN(it.gwiazdki)}` : (it.popularnosc ? `🔥 ${esc(it.popularnosc)}` : "⭐ brak danych");
+  return `<article class="card glass ${st.arc[it.id]?"arch":""}" id="c-${it.id}" style="animation-delay:${Math.min(i,12)*30}ms">
+    <div class="topl">
+      <div class="ic" style="background:linear-gradient(135deg,${c1},${c2})">${ICON[it.kategoria]||"•"}</div>
+      <div style="min-width:0">
+        <div class="title">${esc(it.nazwa)}</div>
+        <div class="slug">${esc(it.repo || it.zrodlo)}</div>
+      </div>
+      <div class="score ${sc}"><b>${it.ocena}</b><span>/10</span></div>
+    </div>
+    <p class="desc">${esc(it.opis)}</p>
+    <p class="why"><b>Dla Ciebie:</b> ${esc(it.dlaczego)}</p>
+    <div class="tags">
+      <span class="tag cat">${esc(it.kategoria)}</span>
+      <span class="tag d-${it.trudnosc}">${esc(it.trudnosc)}</span>
+      <span class="tag">${pop}</span>
+      <span class="tag">🕒 ${fmtD(it.aktywnosc)}</span>
+      <span class="tag">📄 ${esc(it.licencja)}</span>
+    </div>
+    <details>
+      <summary>Jak użyć z Grok Botem</summary>
+      <div class="how">
+        <ol>${it.kroki.map(k=>`<li>${esc(k)}</li>`).join("")}</ol>
+        <div class="prompt">${esc(it.prompt)}</div>
+        <button class="btn primary" data-copy="${it.id}">📋 Kopiuj prompt</button>
+      </div>
+    </details>
+    <div class="acts">
+      <a class="btn ghost" href="${esc(it.url)}" target="_blank" rel="noopener">Źródło ↗</a>
+      <button class="btn tog fav ${st.fav[it.id]?"on":""}" data-t="fav" data-id="${it.id}" aria-label="Ulubione" title="Ulubione">${st.fav[it.id]?"★":"☆"}</button>
+      <button class="btn tog tried ${st.tried[it.id]?"on":""}" data-t="tried" data-id="${it.id}" aria-label="Wypróbowane" title="Wypróbowane">✓</button>
+      <button class="btn tog arc ${st.arc[it.id]?"on":""}" data-t="arc" data-id="${it.id}" aria-label="Archiwum" title="Archiwum">🗄</button>
+    </div>
+  </article>`;
+}
+
+function render(){
+  const items = DATA.pozycje;
+  const q = document.getElementById("q").value.trim().toLowerCase();
+  const sort = document.getElementById("sort").value;
+  const cnt = k => items.filter(i=>st[k][i.id]).length;
+  document.getElementById("sTotal").textContent = items.length;
+  document.getElementById("sFav").textContent = cnt("fav");
+  document.getElementById("sTried").textContent = cnt("tried");
+  document.getElementById("sDate").textContent = fmtD(DATA.data_zwiadu);
+
+  const byId = Object.fromEntries(items.map(i=>[i.id,i]));
+  document.getElementById("top5").innerHTML = DATA.top5.map((id,n)=>{const it=byId[id]; if(!it) return "";
+    return `<button class="tcard glass" data-jump="${id}"><span class="rank">#${n+1} · ${it.ocena}/10</span>
+      <div class="title">${ICON[it.kategoria]||""} ${esc(it.nazwa)}</div><p>${esc(it.dlaczego)}</p></button>`}).join("");
+
+  const statuses = [["aktywne","Aktywne",items.filter(i=>!st.arc[i.id]).length],["fav","★ Ulubione",cnt("fav")],["tried","✓ Wypróbowane",cnt("tried")],["arc","🗄 Archiwum",cnt("arc")],["all","Wszystko",items.length]];
+  document.getElementById("status").innerHTML = statuses.map(([k,l,n])=>`<button class="chip ${status===k?"on":""}" data-status="${k}">${l}<small>${n}</small></button>`).join("");
+  const cats = ["Wszystkie",...[...new Set(items.map(i=>i.kategoria))].sort((a,b)=>a.localeCompare(b,"pl"))];
+  document.getElementById("cats").innerHTML = cats.map(c=>`<button class="chip ${cat===c?"on":""}" data-cat="${esc(c)}">${c==="Wszystkie"?"Wszystkie kategorie":(ICON[c]||"")+" "+esc(c)}<small>${c==="Wszystkie"?items.length:items.filter(i=>i.kategoria===c).length}</small></button>`).join("");
+
+  let list = items.filter(i => (cat==="Wszystkie"||i.kategoria===cat)
+    && (status==="all" || (status==="aktywne" ? !st.arc[i.id] : st[status][i.id]))
+    && (!q || [i.nazwa,i.repo,i.opis,i.dlaczego,i.kategoria,i.zrodlo,i.prompt].join(" ").toLowerCase().includes(q)));
+  const S = {ocena:(a,b)=>b.ocena-a.ocena||(b.gwiazdki||0)-(a.gwiazdki||0),
+             gwiazdki:(a,b)=>(b.gwiazdki??-1)-(a.gwiazdki??-1),
+             data:(a,b)=>(b.aktywnosc||"").localeCompare(a.aktywnosc||""),
+             trudnosc:(a,b)=>DIFF[a.trudnosc]-DIFF[b.trudnosc]||b.ocena-a.ocena};
+  list.sort(S[sort]);
+  document.getElementById("grid").innerHTML = list.length ? list.map(card).join("")
+    : `<div class="empty">Nic tu nie ma${q?` dla „${esc(q)}”`:""}. Zmień filtr albo wyszukiwanie.</div>`;
+  document.getElementById("note").innerHTML = `Zwiad z ${fmtD(DATA.data_zwiadu)}. ${esc(DATA.uwagi)}<br>Źródła: ${DATA.zrodla.map(esc).join(" · ")}<br>Ulubione, wypróbowane i archiwum zapisują się tylko na tym urządzeniu.`;
+}
+
+document.addEventListener("click", e => {
+  const t = e.target.closest("button"); if(!t) return;
+  if(t.dataset.t){ const k=t.dataset.t,id=t.dataset.id; st[k][id]?delete st[k][id]:st[k][id]=1; save(); render();
+    toast({fav:"Ulubione",tried:"Wypróbowane",arc:"Archiwum"}[k]+(st[k][id]?": dodano":": usunięto")); }
+  else if(t.dataset.status){ status=t.dataset.status; render(); }
+  else if(t.dataset.cat){ cat=t.dataset.cat; render(); }
+  else if(t.dataset.copy){ const it=DATA.pozycje.find(i=>i.id===t.dataset.copy); copy(it.prompt).then(ok=>{
+      toast(ok?"Skopiowano prompt – wklej go Grok Botowi":"Nie udało się skopiować – zaznacz tekst ręcznie");
+      if(ok){t.classList.add("ok");t.textContent="✓ Skopiowano";setTimeout(()=>{t.classList.remove("ok");t.textContent="📋 Kopiuj prompt"},1800);} }); }
+  else if(t.dataset.jump){ const id=t.dataset.jump; cat="Wszystkie"; status="all"; document.getElementById("q").value=""; render();
+    const el=document.getElementById("c-"+id); el.scrollIntoView({behavior:"smooth",block:"start"}); el.querySelector("details").open=true;
+    el.classList.add("flash"); setTimeout(()=>el.classList.remove("flash"),1600); }
+});
+async function copy(text){
+  try{ await navigator.clipboard.writeText(text); return true; }catch(e){
+    const ta=document.createElement("textarea"); ta.value=text; ta.setAttribute("readonly",""); ta.style.position="fixed"; ta.style.opacity="0";
+    document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0,99999); let ok=false; try{ok=document.execCommand("copy")}catch(_){}
+    ta.remove(); return ok; }
+}
+document.getElementById("q").addEventListener("input", render);
+document.getElementById("sort").addEventListener("change", render);
+applyTheme(); render();
+fetch("data.json",{cache:"no-cache"}).then(r=>r.ok?r.json():null).then(d=>{ if(d&&d.pozycje){DATA=d; render();} }).catch(()=>{});
+</script>
+</body>
+</html>

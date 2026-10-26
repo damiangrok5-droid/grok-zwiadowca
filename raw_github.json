@@ -1,0 +1,344 @@
+{
+ "anthropics/skills": {
+  "full_name": "anthropics/skills",
+  "stars": 183867,
+  "pushed_at": "2026-10-09T18:45:52Z",
+  "license": null,
+  "desc": "Public repository for Agent Skills",
+  "archived": false,
+  "url": "https://github.com/anthropics/skills"
+ },
+ "modelcontextprotocol/servers": {
+  "full_name": "modelcontextprotocol/servers",
+  "stars": 91574,
+  "pushed_at": "2026-10-25T05:26:36Z",
+  "license": "NOASSERTION",
+  "desc": "Model Context Protocol Servers",
+  "archived": false,
+  "url": "https://github.com/modelcontextprotocol/servers"
+ },
+ "punkpeye/awesome-mcp-servers": {
+  "full_name": "punkpeye/awesome-mcp-servers",
+  "stars": 96884,
+  "pushed_at": "2026-10-23T18:57:44Z",
+  "license": "MIT",
+  "desc": "A collection of MCP servers.",
+  "archived": false,
+  "url": "https://github.com/punkpeye/awesome-mcp-servers"
+ },
+ "github/github-mcp-server": {
+  "full_name": "github/github-mcp-server",
+  "stars": 33966,
+  "pushed_at": "2026-10-23T21:21:33Z",
+  "license": "MIT",
+  "desc": "GitHub's official MCP Server",
+  "archived": false,
+  "url": "https://github.com/github/github-mcp-server"
+ },
+ "microsoft/playwright-mcp": {
+  "full_name": "microsoft/playwright-mcp",
+  "stars": 38643,
+  "pushed_at": "2026-10-22T17:43:26Z",
+  "license": "Apache-2.0",
+  "desc": "Playwright MCP server",
+  "archived": false,
+  "url": "https://github.com/microsoft/playwright-mcp"
+ },
+ "upstash/context7": {
+  "full_name": "upstash/context7",
+  "stars": 63701,
+  "pushed_at": "2026-10-26T09:52:45Z",
+  "license": "MIT",
+  "desc": "Context7 Platform -- Up-to-date docs for AI agents",
+  "archived": false,
+  "url": "https://github.com/upstash/context7"
+ },
+ "PrefectHQ/fastmcp": {
+  "full_name": "PrefectHQ/fastmcp",
+  "stars": 28205,
+  "pushed_at": "2026-10-26T09:55:41Z",
+  "license": "Apache-2.0",
+  "desc": "\ud83d\ude80 The fast, Pythonic way to build MCP servers and clients.",
+  "archived": false,
+  "url": "https://github.com/PrefectHQ/fastmcp"
+ },
+ "modelcontextprotocol/inspector": {
+  "full_name": "modelcontextprotocol/inspector",
+  "stars": 11153,
+  "pushed_at": "2026-10-25T05:56:31Z",
+  "license": "NOASSERTION",
+  "desc": "Visual testing tool for MCP servers",
+  "archived": false,
+  "url": "https://github.com/modelcontextprotocol/inspector"
+ },
+ "unclecode/crawl4ai": {
+  "full_name": "unclecode/crawl4ai",
+  "stars": 86289,
+  "pushed_at": "2026-10-26T08:56:30Z",
+  "license": "Apache-2.0",
+  "desc": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key. Join our Discord https://discord.gg/VuxzM8mtf",
+  "archived": false,
+  "url": "https://github.com/unclecode/crawl4ai"
+ },
+ "searxng/searxng": {
+  "full_name": "searxng/searxng",
+  "stars": 38859,
+  "pushed_at": "2026-10-25T18:37:23Z",
+  "license": "AGPL-3.0",
+  "desc": "SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled.",
+  "archived": false,
+  "url": "https://github.com/searxng/searxng"
+ },
+ "ComposioHQ/awesome-claude-skills": {
+  "full_name": "ComposioHQ/awesome-claude-skills",
+  "stars": 77972,
+  "pushed_at": "2026-09-18T07:16:11Z",
+  "license": null,
+  "desc": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows",
+  "archived": false,
+  "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+ },
+ "VoltAgent/awesome-agent-skills": {
+  "full_name": "VoltAgent/awesome-agent-skills",
+  "stars": 36380,
+  "pushed_at": "2026-10-25T13:18:51Z",
+  "license": "MIT",
+  "desc": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more.",
+  "archived": false,
+  "url": "https://github.com/VoltAgent/awesome-agent-skills"
+ },
+ "mvanhorn/last30days-skill": {
+  "full_name": "mvanhorn/last30days-skill",
+  "stars": 65516,
+  "pushed_at": "2026-10-26T03:17:41Z",
+  "license": "MIT",
+  "desc": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+  "archived": false,
+  "url": "https://github.com/mvanhorn/last30days-skill"
+ },
+ "nextlevelbuilder/ui-ux-pro-max-skill": {
+  "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "stars": 140606,
+  "pushed_at": "2026-10-26T10:07:28Z",
+  "license": "MIT",
+  "desc": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms.",
+  "archived": false,
+  "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill"
+ },
+ "tt-a1i/archify": {
+  "full_name": "tt-a1i/archify",
+  "stars": 89477,
+  "pushed_at": "2026-10-26T05:59:06Z",
+  "license": "Apache-2.0",
+  "desc": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more.",
+  "archived": false,
+  "url": "https://github.com/tt-a1i/archify"
+ },
+ "blader/humanizer": {
+  "full_name": "blader/humanizer",
+  "stars": 60778,
+  "pushed_at": "2026-10-16T19:12:03Z",
+  "license": "MIT",
+  "desc": "Agent skill that removes signs of AI-generated writing from text",
+  "archived": false,
+  "url": "https://github.com/blader/humanizer"
+ },
+ "coreyhaines31/marketingskills": {
+  "full_name": "coreyhaines31/marketingskills",
+  "stars": 56585,
+  "pushed_at": "2026-10-22T16:57:46Z",
+  "license": "MIT",
+  "desc": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+  "archived": false,
+  "url": "https://github.com/coreyhaines31/marketingskills"
+ },
+ "ayghri/i-have-adhd": {
+  "full_name": "ayghri/i-have-adhd",
+  "stars": 58787,
+  "pushed_at": "2026-10-19T19:46:23Z",
+  "license": "MIT",
+  "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+  "archived": false,
+  "url": "https://github.com/ayghri/i-have-adhd"
+ },
+ "kepano/obsidian-skills": {
+  "full_name": "kepano/obsidian-skills",
+  "stars": 50122,
+  "pushed_at": "2026-09-15T14:43:57Z",
+  "license": "MIT",
+  "desc": "Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.",
+  "archived": false,
+  "url": "https://github.com/kepano/obsidian-skills"
+ },
+ "dontriskit/awesome-ai-system-prompts": {
+  "full_name": "dontriskit/awesome-ai-system-prompts",
+  "stars": 6264,
+  "pushed_at": "2026-09-29T20:38:31Z",
+  "license": "MIT",
+  "desc": "\ud83e\udde0 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI. ",
+  "archived": false,
+  "url": "https://github.com/dontriskit/awesome-ai-system-prompts"
+ },
+ "x1xhlol/system-prompts-and-models-of-ai-tools": {
+  "full_name": "x1xhlol/system-prompts-and-models-of-ai-tools",
+  "stars": 144262,
+  "pushed_at": "2026-10-12T15:19:01Z",
+  "license": "GPL-3.0",
+  "desc": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+  "archived": false,
+  "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
+ },
+ "f/awesome-chatgpt-prompts": {
+  "full_name": "f/prompts.chat",
+  "stars": 174605,
+  "pushed_at": "2026-10-26T07:40:01Z",
+  "license": "NOASSERTION",
+  "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source \u2014 self-host for your organization with complete privacy.",
+  "archived": false,
+  "url": "https://github.com/f/prompts.chat"
+ },
+ "e2b-dev/awesome-ai-agents": {
+  "full_name": "e2b-dev/awesome-ai-agents",
+  "stars": 30646,
+  "pushed_at": "2026-08-21T18:52:45Z",
+  "license": "NOASSERTION",
+  "desc": "A list of AI autonomous agents",
+  "archived": false,
+  "url": "https://github.com/e2b-dev/awesome-ai-agents"
+ },
+ "Shubhamsaboo/awesome-llm-apps": {
+  "full_name": "Shubhamsaboo/awesome-llm-apps",
+  "stars": 143090,
+  "pushed_at": "2026-10-22T19:10:10Z",
+  "license": "Apache-2.0",
+  "desc": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.",
+  "archived": false,
+  "url": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+ },
+ "nibzard/awesome-agentic-patterns": {
+  "full_name": "nibzard/awesome-agentic-patterns",
+  "stars": 5047,
+  "pushed_at": "2026-10-14T23:13:20Z",
+  "license": "Apache-2.0",
+  "desc": "A curated catalogue of awesome agentic AI patterns",
+  "archived": false,
+  "url": "https://github.com/nibzard/awesome-agentic-patterns"
+ },
+ "openai/openai-agents-python": {
+  "full_name": "openai/openai-agents-python",
+  "stars": 30293,
+  "pushed_at": "2026-10-22T22:05:38Z",
+  "license": "MIT",
+  "desc": "A lightweight, powerful framework for multi-agent workflows",
+  "archived": false,
+  "url": "https://github.com/openai/openai-agents-python"
+ },
+ "crewAIInc/crewAI": {
+  "full_name": "crewAIInc/crewAI",
+  "stars": 60116,
+  "pushed_at": "2026-10-26T08:30:16Z",
+  "license": "MIT",
+  "desc": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
+  "archived": false,
+  "url": "https://github.com/crewAIInc/crewAI"
+ },
+ "langchain-ai/langgraph": {
+  "full_name": "langchain-ai/langgraph",
+  "stars": 43923,
+  "pushed_at": "2026-10-26T05:20:08Z",
+  "license": "MIT",
+  "desc": "Build resilient agents.",
+  "archived": false,
+  "url": "https://github.com/langchain-ai/langgraph"
+ },
+ "HKUDS/nanobot": {
+  "full_name": "HKUDS/nanobot",
+  "stars": 49362,
+  "pushed_at": "2026-10-26T09:49:13Z",
+  "license": "MIT",
+  "desc": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+  "archived": false,
+  "url": "https://github.com/HKUDS/nanobot"
+ },
+ "TauricResearch/TradingAgents": {
+  "full_name": "TauricResearch/TradingAgents",
+  "stars": 115164,
+  "pushed_at": "2026-10-16T21:38:46Z",
+  "license": "Apache-2.0",
+  "desc": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+  "archived": false,
+  "url": "https://github.com/TauricResearch/TradingAgents"
+ },
+ "enescingoz/awesome-n8n-templates": {
+  "full_name": "enescingoz/awesome-n8n-templates",
+  "stars": 26104,
+  "pushed_at": "2026-09-12T13:00:32Z",
+  "license": "NOASSERTION",
+  "desc": "280+ free n8n automation templates \u2014 ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection.",
+  "archived": false,
+  "url": "https://github.com/enescingoz/awesome-n8n-templates"
+ },
+ "n8n-io/n8n": {
+  "full_name": "n8n-io/n8n",
+  "stars": 208623,
+  "pushed_at": "2026-10-26T10:09:58Z",
+  "license": "NOASSERTION",
+  "desc": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
+  "archived": false,
+  "url": "https://github.com/n8n-io/n8n"
+ },
+ "upptime/upptime": {
+  "full_name": "upptime/upptime",
+  "stars": 17186,
+  "pushed_at": "2026-10-26T04:14:46Z",
+  "license": "MIT",
+  "desc": "\u2b06\ufe0f GitHub Actions uptime monitor & status page by @AnandChowdhary",
+  "archived": false,
+  "url": "https://github.com/upptime/upptime"
+ },
+ "simonw/llm": {
+  "full_name": "simonw/llm",
+  "stars": 12672,
+  "pushed_at": "2026-10-21T14:29:00Z",
+  "license": "Apache-2.0",
+  "desc": "Access large language models from the command-line",
+  "archived": false,
+  "url": "https://github.com/simonw/llm"
+ },
+ "yt-dlp/yt-dlp": {
+  "full_name": "yt-dlp/yt-dlp",
+  "stars": 202328,
+  "pushed_at": "2026-10-23T15:18:53Z",
+  "license": "Unlicense",
+  "desc": "A feature-rich command-line audio/video downloader",
+  "archived": false,
+  "url": "https://github.com/yt-dlp/yt-dlp"
+ },
+ "tabler/tabler": {
+  "full_name": "tabler/tabler",
+  "stars": 41957,
+  "pushed_at": "2026-10-25T14:38:13Z",
+  "license": "MIT",
+  "desc": "Free and open source admin dashboard UI kit built on Bootstrap: 100+ pages, 6,000+ icons, dark mode, RTL.",
+  "archived": false,
+  "url": "https://github.com/tabler/tabler"
+ },
+ "chartjs/Chart.js": {
+  "full_name": "chartjs/Chart.js",
+  "stars": 67760,
+  "pushed_at": "2026-10-23T11:47:55Z",
+  "license": "MIT",
+  "desc": "Simple HTML5 Charts using the <canvas> tag",
+  "archived": false,
+  "url": "https://github.com/chartjs/Chart.js"
+ },
+ "simonw/shot-scraper": {
+  "full_name": "simonw/shot-scraper",
+  "stars": 2597,
+  "pushed_at": "2026-10-14T03:21:49Z",
+  "license": "Apache-2.0",
+  "desc": "A CLI utility for taking screenshots of websites, recording video demos and scraping sites using JavaScript",
+  "archived": false,
+  "url": "https://github.com/simonw/shot-scraper"
+ }
+}
