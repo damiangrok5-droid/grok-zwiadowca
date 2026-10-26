@@ -85,6 +85,7 @@ select{height:44px;border-radius:12px;border:0;background:var(--field);color:var
 .why b{color:var(--text)}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-size:12px;font-weight:600;padding:5px 9px;border-radius:999px;background:var(--field);color:var(--muted)}
+.tag.pd{color:var(--green);background:rgba(48,209,88,.14)}
 .tag.cat{color:var(--accent);background:rgba(10,132,255,.12)}
 .tag.d-łatwa{color:var(--green);background:rgba(48,209,88,.14)}
 .tag.d-średnia{color:var(--orange);background:rgba(255,159,10,.14)}
@@ -141,6 +142,9 @@ details[open] summary::after{transform:rotate(90deg)}
   <h2>⭐ Top 5 na start</h2>
   <div class="top5" id="top5"></div>
 
+  <div id="pdWrap" hidden><h2>🏠 Dla Projektu Domu – Top 5</h2>
+  <div class="top5" id="top5pd"></div></div>
+
   <h2>Wszystkie znaleziska</h2>
   <div class="toolbar">
     <div class="row">
@@ -171,9 +175,9 @@ const st = Object.assign({fav:{},tried:{},arc:{},theme:"auto"}, JSON.parse(local
 const save = () => localStorage.setItem(LS, JSON.stringify(st));
 let DATA = JSON.parse(document.getElementById("embedded").textContent);
 let cat = "Wszystkie", status = "aktywne";
-const ICON = {"Serwery MCP":"🔌","Skille":"🧩","Prompty":"💬","Szablony agentów":"🤖","Automatyzacje":"⏱️","Narzędzia CLI":"⌨️","Dashboardy HTML":"📊","Workflow multi-agent":"🕸️","Poradniki":"📖"};
+const ICON = {"Serwery MCP":"🔌","Skille":"🧩","Prompty":"💬","Szablony agentów":"🤖","Automatyzacje":"⏱️","Narzędzia CLI":"⌨️","Dashboardy HTML":"📊","Workflow multi-agent":"🕸️","Poradniki":"📖","Dane":"🗄️"};
 const GRADS = {"Serwery MCP":["#0a84ff","#5e5ce6"],"Skille":["#bf5af2","#ff375f"],"Prompty":["#ff9f0a","#ff375f"],"Szablony agentów":["#30d158","#0a84ff"],
-  "Automatyzacje":["#64d2ff","#5e5ce6"],"Narzędzia CLI":["#8e8e93","#3a3a3c"],"Dashboardy HTML":["#ff453a","#ff9f0a"],"Workflow multi-agent":["#5e5ce6","#bf5af2"],"Poradniki":["#30d158","#64d2ff"]};
+  "Automatyzacje":["#64d2ff","#5e5ce6"],"Narzędzia CLI":["#8e8e93","#3a3a3c"],"Dashboardy HTML":["#ff453a","#ff9f0a"],"Workflow multi-agent":["#5e5ce6","#bf5af2"],"Poradniki":["#30d158","#64d2ff"],"Dane":["#ff9f0a","#30d158"]};
 const DIFF = {"łatwa":1,"średnia":2,"trudna":3};
 const esc = s => String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fmtN = n => n==null ? "brak danych" : n>=1000 ? (n/1000).toFixed(n>=10000?0:1).replace(".",",")+" tys." : String(n);
@@ -206,7 +210,7 @@ function card(it,i){
     <p class="desc">${esc(it.opis)}</p>
     <p class="why"><b>Dla Ciebie:</b> ${esc(it.dlaczego)}</p>
     <div class="tags">
-      <span class="tag cat">${esc(it.kategoria)}</span>
+      <span class="tag cat">${esc(it.kategoria)}</span>${(it.tagi||[]).map(t=>`<span class="tag pd">🏠 ${esc(t)}</span>`).join("")}
       <span class="tag d-${it.trudnosc}">${esc(it.trudnosc)}</span>
       <span class="tag">${pop}</span>
       <span class="tag">🕒 ${fmtD(it.aktywnosc)}</span>
@@ -240,18 +244,23 @@ function render(){
   document.getElementById("sDate").textContent = fmtD(DATA.data_zwiadu);
 
   const byId = Object.fromEntries(items.map(i=>[i.id,i]));
-  document.getElementById("top5").innerHTML = DATA.top5.map((id,n)=>{const it=byId[id]; if(!it) return "";
+  const topHtml = ids => (ids||[]).map((id,n)=>{const it=byId[id]; if(!it) return "";
     return `<button class="tcard glass" data-jump="${id}"><span class="rank">#${n+1} · ${it.ocena}/10</span>
       <div class="title">${ICON[it.kategoria]||""} ${esc(it.nazwa)}</div><p>${esc(it.dlaczego)}</p></button>`}).join("");
+  document.getElementById("top5").innerHTML = topHtml(DATA.top5);
+  document.getElementById("top5pd").innerHTML = topHtml(DATA.top5_projekt_domu);
+  document.getElementById("pdWrap").hidden = !(DATA.top5_projekt_domu||[]).length;
 
   const statuses = [["aktywne","Aktywne",items.filter(i=>!st.arc[i.id]).length],["fav","★ Ulubione",cnt("fav")],["tried","✓ Wypróbowane",cnt("tried")],["arc","🗄 Archiwum",cnt("arc")],["all","Wszystko",items.length]];
   document.getElementById("status").innerHTML = statuses.map(([k,l,n])=>`<button class="chip ${status===k?"on":""}" data-status="${k}">${l}<small>${n}</small></button>`).join("");
-  const cats = ["Wszystkie",...[...new Set(items.map(i=>i.kategoria))].sort((a,b)=>a.localeCompare(b,"pl"))];
-  document.getElementById("cats").innerHTML = cats.map(c=>`<button class="chip ${cat===c?"on":""}" data-cat="${esc(c)}">${c==="Wszystkie"?"Wszystkie kategorie":(ICON[c]||"")+" "+esc(c)}<small>${c==="Wszystkie"?items.length:items.filter(i=>i.kategoria===c).length}</small></button>`).join("");
+  const tags = [...new Set(items.flatMap(i=>i.tagi||[]))];
+  const inCat = (i,c) => c==="Wszystkie" || i.kategoria===c || (c.startsWith("#") && (i.tagi||[]).includes(c.slice(1)));
+  const cats = ["Wszystkie",...tags.map(t=>"#"+t),...[...new Set(items.map(i=>i.kategoria))].sort((a,b)=>a.localeCompare(b,"pl"))];
+  document.getElementById("cats").innerHTML = cats.map(c=>`<button class="chip ${cat===c?"on":""}" data-cat="${esc(c)}">${c==="Wszystkie"?"Wszystkie kategorie":c.startsWith("#")?"🏠 "+esc(c.slice(1)):(ICON[c]||"")+" "+esc(c)}<small>${items.filter(i=>inCat(i,c)).length}</small></button>`).join("");
 
-  let list = items.filter(i => (cat==="Wszystkie"||i.kategoria===cat)
+  let list = items.filter(i => inCat(i,cat)
     && (status==="all" || (status==="aktywne" ? !st.arc[i.id] : st[status][i.id]))
-    && (!q || [i.nazwa,i.repo,i.opis,i.dlaczego,i.kategoria,i.zrodlo,i.prompt].join(" ").toLowerCase().includes(q)));
+    && (!q || [i.nazwa,i.repo,i.opis,i.dlaczego,i.kategoria,i.zrodlo,i.prompt,...(i.tagi||[])].join(" ").toLowerCase().includes(q)));
   const S = {ocena:(a,b)=>b.ocena-a.ocena||(b.gwiazdki||0)-(a.gwiazdki||0),
              gwiazdki:(a,b)=>(b.gwiazdki??-1)-(a.gwiazdki??-1),
              data:(a,b)=>(b.aktywnosc||"").localeCompare(a.aktywnosc||""),

@@ -226,12 +226,14 @@ for (key,kat,nazwa,opis,ocena,why,tr,kroki,prompt) in E:
         it.update(nazwa=n['nazwa'],repo=None,url=n['url'],zrodlo=n['src'],licencja="brak danych",gwiazdki=None,aktywnosc=n['date'],
                   popularnosc=f"{n['points']} {n['unit']}",dyskusja=n.get('hn') or n['url'])
     items.append(it)
+from projekt_domu import projekt_domu_items, PD_TOP
+items += projekt_domu_items()
 assert len(items)==len({i['id'] for i in items})
 data=dict(tytul="Zwiadowca Rozwiązań",data_zwiadu="2026-10-26",wygenerowano=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"),
   zrodla=["GitHub API (gh api repos/…, search/repositories)","Hacker News (Algolia API)","Reddit (wyniki wyszukiwania; API Reddita zablokowane z komputera bota)","awesome-listy: awesome-mcp-servers, modelcontextprotocol/servers, awesome-claude-skills, awesome-agent-skills, awesome-ai-agents"],
-  uwagi="Gwiazdki i daty ostatniego pushu pobrane z GitHub API w dniu zwiadu. Dla pozycji spoza GitHuba podano punkty z HN/Reddita i datę publikacji.",
+  uwagi="Pozycje z tagiem Projekt Domu dodano 26.10.2026 dla agenta projektowania domu. Gwiazdki i daty ostatniego pushu pobrane z GitHub API w dniu zwiadu. Dla pozycji spoza GitHuba podano punkty z HN/Reddita i datę publikacji.",
   top5=[i['id'] for i in items if i['top']], pozycje=items)
-# order top5 per TOP
 data['top5']=[k.replace('/','__') for k in TOP]
+data['top5_projekt_domu']=PD_TOP
 json.dump(data,open('data.json','w'),ensure_ascii=False,indent=1)
 print(len(items))

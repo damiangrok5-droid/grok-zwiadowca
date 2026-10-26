@@ -9,3 +9,6 @@ Serwery MCP, skille (SKILL.md), prompty, szablony agentów, automatyzacje, narz�
 - `build_data.py` → `data.json`, `embed.py` → `index.html` (z `template.html`)
 
 Ulubione, wypróbowane i archiwum zapisują się w localStorage przeglądarki.
+
+## Projekt Domu
+Pozycje z tagiem „Projekt Domu” (10 szt., `projekt_domu.py`) to narzędzia dla agenta projektowania domu. Filtr 🏠 i osobne Top 5 na stronie.
