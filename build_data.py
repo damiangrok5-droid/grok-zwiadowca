@@ -213,6 +213,22 @@ add("rd:5skills","Skille","",
  ["Bot znajduje każdy skill.","Ocenia przydatność.","Adaptuje 2–3 najlepsze."],
  "Przeczytaj wątek https://www.reddit.com/r/AI_Agents/comments/1roe8k8/5_agent_skills_id_install_before_starting_any_new/, znajdź źródła wymienionych skilli (prompt-engineer, skill-creator, mcp-builder, agentic-eval) i zaadaptuj 2 najbardziej przydatne dla mnie jako Twoje skille.")
 
+add("dgtlmoon/changedetection.io","Automatyzacje","changedetection.io – alerty o zmianach na stronach",
+ "Samohostowane narzędzie do wykrywania zmian na stronach WWW (także z filtrem CSS/XPath i JSON), z powiadomieniami przez Apprise (e-mail, webhook, Telegram itd.). Licencja Apache-2.0.",
+ 9,"Najprostszy sposób, żeby agent dostawał alert, gdy na stronie urzędu, sklepu albo w API pojawi się nowa pozycja – bez pisania własnego scrapera.","średnia",
+ ["Bot uruchamia changedetection.io na swoim komputerze (pip lub Docker).","Dodajesz adresy do obserwowania z filtrem na listę wpisów.","Powiadomienie trafia do webhooka/e-maila, a routine bota je odczytuje."],
+ "Na swoim komputerze uruchom changedetection.io (https://github.com/dgtlmoon/changedetection.io) lokalnie, bez wystawiania na świat. Dodaj obserwację https://www.gov.pl/web/zdrowie/obwieszczenia-ministra-zdrowia-lista-lekow-refundowanych z filtrem na listę obwieszczeń i sprawdzaniem co 6 godzin. Gdy pojawi się zmiana, zapisz różnicę do pliku i streść mi ją po polsku.")
+add("RSS-Bridge/rss-bridge","Automatyzacje","RSS-Bridge – RSS dla stron bez RSS",
+ "Aplikacja PHP, która generuje kanały RSS/Atom dla stron, które ich nie mają (gotowe „mosty” oraz uniwersalny CssSelectorBridge). Licencja Unlicense.",
+ 7,"Gdy strona nie ma RSS (np. serwisy gov.pl), most zamienia listę wpisów w kanał, który łatwo czytać w routine.","średnia",
+ ["Bot uruchamia RSS-Bridge lokalnie (wbudowany serwer PHP lub Docker).","Konfiguruje CssSelectorBridge dla wybranej listy.","Routine co kilka godzin czyta kanał i zgłasza nowe wpisy."],
+ "Uruchom lokalnie na swoim komputerze RSS-Bridge (https://github.com/RSS-Bridge/rss-bridge). Zrób kanał przez CssSelectorBridge dla strony https://www.gov.pl/web/zdrowie/wiadomosci i pokaż mi 5 najnowszych wpisów z linkami. Niczego nie wystawiaj publicznie.")
+add("gitroomhq/postiz-app","Automatyzacje","Postiz – planowanie postów (self-host)",
+ "Otwartoźródłowe narzędzie do planowania i publikowania postów w wielu serwisach (X, LinkedIn, Bluesky i inne), z kalendarzem i analityką. Licencja AGPL-3.0; do X potrzebne własne klucze X API (płatne za użycie).",
+ 7,"Kolejka i kalendarz własnych postów bez kopiowania ręcznego – tylko planowanie własnych treści, bez automatycznych odpowiedzi i polubień (zasady automatyzacji X).","trudna",
+ ["Przeczytaj dokumentację self-host (Docker).","Podłącz własną aplikację X API (OAuth) – to krok dla właściciela konta.","Agent wrzuca szkice do kolejki, człowiek zatwierdza."],
+ "Przeczytaj dokumentację https://github.com/gitroomhq/postiz-app i opisz mi po polsku, co trzeba zrobić, żeby planować własne posty na X przez Postiz: wymagania (Docker, baza), koszty X API i które kroki muszę zrobić sam. Niczego nie instaluj i nie łącz z moimi kontami.")
+
 TOP = ["anthropics/skills","mvanhorn/last30days-skill","nextlevelbuilder/ui-ux-pro-max-skill","unclecode/crawl4ai","tt-a1i/archify"]
 items=[]
 for (key,kat,nazwa,opis,ocena,why,tr,kroki,prompt) in E:

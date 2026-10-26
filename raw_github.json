@@ -58,7 +58,7 @@
   "stars": 28205,
   "pushed_at": "2026-10-26T09:55:41Z",
   "license": "Apache-2.0",
-  "desc": "\ud83d\ude80 The fast, Pythonic way to build MCP servers and clients.",
+  "desc": "🚀 The fast, Pythonic way to build MCP servers and clients.",
   "archived": false,
   "url": "https://github.com/PrefectHQ/fastmcp"
  },
@@ -175,7 +175,7 @@
   "stars": 6264,
   "pushed_at": "2026-09-29T20:38:31Z",
   "license": "MIT",
-  "desc": "\ud83e\udde0 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI. ",
+  "desc": "🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI. ",
   "archived": false,
   "url": "https://github.com/dontriskit/awesome-ai-system-prompts"
  },
@@ -193,7 +193,7 @@
   "stars": 174605,
   "pushed_at": "2026-10-26T07:40:01Z",
   "license": "NOASSERTION",
-  "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source \u2014 self-host for your organization with complete privacy.",
+  "desc": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
   "archived": false,
   "url": "https://github.com/f/prompts.chat"
  },
@@ -274,7 +274,7 @@
   "stars": 26104,
   "pushed_at": "2026-09-12T13:00:32Z",
   "license": "NOASSERTION",
-  "desc": "280+ free n8n automation templates \u2014 ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection.",
+  "desc": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection.",
   "archived": false,
   "url": "https://github.com/enescingoz/awesome-n8n-templates"
  },
@@ -292,7 +292,7 @@
   "stars": 17186,
   "pushed_at": "2026-10-26T04:14:46Z",
   "license": "MIT",
-  "desc": "\u2b06\ufe0f GitHub Actions uptime monitor & status page by @AnandChowdhary",
+  "desc": "⬆️ GitHub Actions uptime monitor & status page by @AnandChowdhary",
   "archived": false,
   "url": "https://github.com/upptime/upptime"
  },
@@ -340,5 +340,32 @@
   "desc": "A CLI utility for taking screenshots of websites, recording video demos and scraping sites using JavaScript",
   "archived": false,
   "url": "https://github.com/simonw/shot-scraper"
+ },
+ "dgtlmoon/changedetection.io": {
+  "full_name": "dgtlmoon/changedetection.io",
+  "stars": 35304,
+  "pushed_at": "2026-10-26T12:47:33Z",
+  "license": "Apache-2.0",
+  "desc": "Best and simplest tool for website change detection, web page monitoring, and website change alerts. Perfect for tracking content changes, price drops, restock alerts, and website defacement monitoring—all for free or enjoy our SaaS plan!",
+  "archived": false,
+  "url": "https://github.com/dgtlmoon/changedetection.io"
+ },
+ "RSS-Bridge/rss-bridge": {
+  "full_name": "RSS-Bridge/rss-bridge",
+  "stars": 9320,
+  "pushed_at": "2026-10-26T08:01:28Z",
+  "license": "Unlicense",
+  "desc": "The RSS feed for websites missing it",
+  "archived": false,
+  "url": "https://github.com/RSS-Bridge/rss-bridge"
+ },
+ "gitroomhq/postiz-app": {
+  "full_name": "gitroomhq/postiz-app",
+  "stars": 38078,
+  "pushed_at": "2026-10-24T18:27:21Z",
+  "license": "AGPL-3.0",
+  "desc": "📨 The ultimate agentic social media scheduling tool 🤖",
+  "archived": false,
+  "url": "https://github.com/gitroomhq/postiz-app"
  }
 }

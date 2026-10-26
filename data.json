@@ -1,7 +1,7 @@
 {
  "tytul": "Zwiadowca Rozwiązań",
  "data_zwiadu": "2026-10-26",
- "wygenerowano": "2026-10-26T14:18Z",
+ "wygenerowano": "2026-10-26T14:48Z",
  "zrodla": [
   "GitHub API (gh api repos/…, search/repositories)",
   "Hacker News (Algolia API)",
@@ -942,6 +942,75 @@
    "dyskusja": "https://www.reddit.com/r/AI_Agents/comments/1roe8k8/5_agent_skills_id_install_before_starting_any_new/"
   },
   {
+   "id": "dgtlmoon__changedetection.io",
+   "kategoria": "Automatyzacje",
+   "opis": "Samohostowane narzędzie do wykrywania zmian na stronach WWW (także z filtrem CSS/XPath i JSON), z powiadomieniami przez Apprise (e-mail, webhook, Telegram itd.). Licencja Apache-2.0.",
+   "ocena": 9,
+   "dlaczego": "Najprostszy sposób, żeby agent dostawał alert, gdy na stronie urzędu, sklepu albo w API pojawi się nowa pozycja – bez pisania własnego scrapera.",
+   "trudnosc": "średnia",
+   "kroki": [
+    "Bot uruchamia changedetection.io na swoim komputerze (pip lub Docker).",
+    "Dodajesz adresy do obserwowania z filtrem na listę wpisów.",
+    "Powiadomienie trafia do webhooka/e-maila, a routine bota je odczytuje."
+   ],
+   "prompt": "Na swoim komputerze uruchom changedetection.io (https://github.com/dgtlmoon/changedetection.io) lokalnie, bez wystawiania na świat. Dodaj obserwację https://www.gov.pl/web/zdrowie/obwieszczenia-ministra-zdrowia-lista-lekow-refundowanych z filtrem na listę obwieszczeń i sprawdzaniem co 6 godzin. Gdy pojawi się zmiana, zapisz różnicę do pliku i streść mi ją po polsku.",
+   "top": false,
+   "nazwa": "changedetection.io – alerty o zmianach na stronach",
+   "repo": "dgtlmoon/changedetection.io",
+   "url": "https://github.com/dgtlmoon/changedetection.io",
+   "zrodlo": "GitHub",
+   "licencja": "Apache-2.0",
+   "gwiazdki": 35304,
+   "aktywnosc": "2026-10-26",
+   "opis_oryginalny": "Best and simplest tool for website change detection, web page monitoring, and website change alerts. Perfect for tracking content changes, price drops, restock alerts, and website defacement monitoring—all for free or enjoy our SaaS plan!"
+  },
+  {
+   "id": "RSS-Bridge__rss-bridge",
+   "kategoria": "Automatyzacje",
+   "opis": "Aplikacja PHP, która generuje kanały RSS/Atom dla stron, które ich nie mają (gotowe „mosty” oraz uniwersalny CssSelectorBridge). Licencja Unlicense.",
+   "ocena": 7,
+   "dlaczego": "Gdy strona nie ma RSS (np. serwisy gov.pl), most zamienia listę wpisów w kanał, który łatwo czytać w routine.",
+   "trudnosc": "średnia",
+   "kroki": [
+    "Bot uruchamia RSS-Bridge lokalnie (wbudowany serwer PHP lub Docker).",
+    "Konfiguruje CssSelectorBridge dla wybranej listy.",
+    "Routine co kilka godzin czyta kanał i zgłasza nowe wpisy."
+   ],
+   "prompt": "Uruchom lokalnie na swoim komputerze RSS-Bridge (https://github.com/RSS-Bridge/rss-bridge). Zrób kanał przez CssSelectorBridge dla strony https://www.gov.pl/web/zdrowie/wiadomosci i pokaż mi 5 najnowszych wpisów z linkami. Niczego nie wystawiaj publicznie.",
+   "top": false,
+   "nazwa": "RSS-Bridge – RSS dla stron bez RSS",
+   "repo": "RSS-Bridge/rss-bridge",
+   "url": "https://github.com/RSS-Bridge/rss-bridge",
+   "zrodlo": "GitHub",
+   "licencja": "Unlicense",
+   "gwiazdki": 9320,
+   "aktywnosc": "2026-10-26",
+   "opis_oryginalny": "The RSS feed for websites missing it"
+  },
+  {
+   "id": "gitroomhq__postiz-app",
+   "kategoria": "Automatyzacje",
+   "opis": "Otwartoźródłowe narzędzie do planowania i publikowania postów w wielu serwisach (X, LinkedIn, Bluesky i inne), z kalendarzem i analityką. Licencja AGPL-3.0; do X potrzebne własne klucze X API (płatne za użycie).",
+   "ocena": 7,
+   "dlaczego": "Kolejka i kalendarz własnych postów bez kopiowania ręcznego – tylko planowanie własnych treści, bez automatycznych odpowiedzi i polubień (zasady automatyzacji X).",
+   "trudnosc": "trudna",
+   "kroki": [
+    "Przeczytaj dokumentację self-host (Docker).",
+    "Podłącz własną aplikację X API (OAuth) – to krok dla właściciela konta.",
+    "Agent wrzuca szkice do kolejki, człowiek zatwierdza."
+   ],
+   "prompt": "Przeczytaj dokumentację https://github.com/gitroomhq/postiz-app i opisz mi po polsku, co trzeba zrobić, żeby planować własne posty na X przez Postiz: wymagania (Docker, baza), koszty X API i które kroki muszę zrobić sam. Niczego nie instaluj i nie łącz z moimi kontami.",
+   "top": false,
+   "nazwa": "Postiz – planowanie postów (self-host)",
+   "repo": "gitroomhq/postiz-app",
+   "url": "https://github.com/gitroomhq/postiz-app",
+   "zrodlo": "GitHub",
+   "licencja": "AGPL-3.0",
+   "gwiazdki": 38078,
+   "aktywnosc": "2026-10-24",
+   "opis_oryginalny": "📨 The ultimate agentic social media scheduling tool 🤖"
+  },
+  {
    "repo": "google/model-viewer",
    "kategoria": "Dashboardy HTML",
    "nazwa": "model-viewer – interaktywny 3D i AR na stronie",
@@ -982,7 +1051,7 @@
     "Przerabia wycenę z CSV na arkusz z formułami."
    ],
    "prompt": "Przeczytaj skille xlsx i pdf z https://github.com/anthropics/skills tylko jako inspirację: mają licencję zastrzeżoną (All rights reserved), więc nie kopiuj z nich tekstu ani skryptów. Napisz własne podejście od zera na openpyxl (MIT): zrób z pliku projekt-domu/02-wycena-budowy.csv arkusz Excel z formułami (sumy etapów, wariant min/średni/max, rezerwa 10%) i sprawdź, czy formuły się przeliczają.",
-   "gwiazdki": 183911,
+   "gwiazdki": 183914,
    "aktywnosc": "2026-10-09",
    "licencja": "zastrzeżona (All rights reserved) – tylko jako wzór, nie kopiować",
    "opis_oryginalny": "Public repository for Agent Skills",
@@ -1085,7 +1154,7 @@
     "Prostsza droga: agent pisze skrypty bpy i renderuje GLB bez okna."
    ],
    "prompt": "Oceń, czy na Twoim komputerze da się uruchomić Blendera (najlepiej bez okna, przez bpy) i wyrenderować salon z projekt-domu/3d/parter-g2-v2.glb z kamerą jak w wizualizacji v1. Opisz, co dałby Blender MCP (https://github.com/ahujasid/mcp-for-blender) w porównaniu ze skryptami bpy. Nic nie instaluj, dopóki nie zatwierdzę planu.",
-   "gwiazdki": 32402,
+   "gwiazdki": 32404,
    "aktywnosc": "2026-10-24",
    "licencja": "MIT",
    "opis_oryginalny": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
@@ -1267,7 +1336,7 @@
     "Ocenia płynność i wagę pliku na iPhonie."
    ],
    "prompt": "Oceń Spark (https://github.com/sparkjsdev/spark) do spaceru po domu: zrób testową stronę three.js z przykładowym splatem z repo i joystickiem, a potem zmierz FPS i rozmiar pliku w widoku iPhone'a. Opisz, jak z renderów Cycles z wielu kamer zrobić własny splat (np. gsplat, Apache-2.0, wymaga GPU NVIDIA) i czy da się to zrobić na Twoim komputerze.",
-   "gwiazdki": 3810,
+   "gwiazdki": 3811,
    "aktywnosc": "2026-10-20",
    "licencja": "MIT",
    "opis_oryginalny": ":sparkles:  An advanced 3D Gaussian Splatting renderer for THREE.js",
@@ -1319,7 +1388,7 @@
     "Skaluje siatkę do wymiarów z karty produktu."
    ],
    "prompt": "Zainstaluj TripoSR (https://github.com/VAST-AI-Research/TripoSR, kod i wagi MIT) w osobnym venv, na CPU (--device cpu). Najpierw zmierz czas i zużycie RAM na jednym zdjęciu produktu. Wygeneruj GLB (--model-save-format glb), przeskaluj go do wymiarów szer./gł./wys. z karty produktu i zapisz razem z nazwą produktu i linkiem do sklepu. Nie używaj modeli z licencją niekomercyjną.",
-   "gwiazdki": 7230,
+   "gwiazdki": 7231,
    "aktywnosc": "2026-06-04",
    "licencja": "MIT",
    "opis_oryginalny": "TripoSR: Fast 3D Object Reconstruction from a Single Image",
