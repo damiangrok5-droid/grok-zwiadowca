@@ -210,7 +210,7 @@ function card(it,i){
     <p class="desc">${esc(it.opis)}</p>
     <p class="why"><b>Dla Ciebie:</b> ${esc(it.dlaczego)}</p>
     <div class="tags">
-      <span class="tag cat">${esc(it.kategoria)}</span>${(it.tagi||[]).map(t=>`<span class="tag pd">🏠 ${esc(t)}</span>`).join("")}
+      <span class="tag cat">${esc(it.kategoria)}</span>${(it.tagi||[]).map(t=>`<span class="tag pd">${t==="Projekt Domu"?"🏠":"🆕"} ${esc(t)}</span>`).join("")}
       <span class="tag d-${it.trudnosc}">${esc(it.trudnosc)}</span>
       <span class="tag">${pop}</span>
       <span class="tag">🕒 ${fmtD(it.aktywnosc)}</span>

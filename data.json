@@ -1,14 +1,15 @@
 {
  "tytul": "Zwiadowca Rozwiązań",
- "data_zwiadu": "2026-10-26",
- "wygenerowano": "2026-10-26T14:48Z",
+ "data_zwiadu": "2026-11-02",
+ "wygenerowano": "2026-11-02T07:09Z",
  "zrodla": [
   "GitHub API (gh api repos/…, search/repositories)",
+  "GitHub search (repo utworzone w ostatnim tygodniu)",
   "Hacker News (Algolia API)",
   "Reddit (wyniki wyszukiwania; API Reddita zablokowane z komputera bota)",
   "awesome-listy: awesome-mcp-servers, modelcontextprotocol/servers, awesome-claude-skills, awesome-agent-skills, awesome-ai-agents"
  ],
- "uwagi": "Pozycje z tagiem Projekt Domu dodano 26.10.2026 dla agenta projektowania domu. Gwiazdki i daty ostatniego pushu pobrane z GitHub API w dniu zwiadu. Dla pozycji spoza GitHuba podano punkty z HN/Reddita i datę publikacji.",
+ "uwagi": "Pozycje z tagiem „Nowe 02.11” dodano w cotygodniowym zwiadzie 2.11.2026. Pozycje z tagiem Projekt Domu dodano 26.10.2026 dla agenta projektowania domu. Gwiazdki i daty ostatniego pushu pobrane z GitHub API w dniu zwiadu. Dla pozycji spoza GitHuba podano punkty z HN/Reddita i datę publikacji.",
  "top5": [
   "anthropics__skills",
   "mvanhorn__last30days-skill",
@@ -36,8 +37,8 @@
    "url": "https://github.com/anthropics/skills",
    "zrodlo": "GitHub",
    "licencja": "mieszana: Apache-2.0 / zastrzeżona (docx, xlsx, pptx, pdf)",
-   "gwiazdki": 183867,
-   "aktywnosc": "2026-10-09",
+   "gwiazdki": 186472,
+   "aktywnosc": "2026-10-28",
    "opis_oryginalny": "Public repository for Agent Skills"
   },
   {
@@ -59,8 +60,8 @@
    "url": "https://github.com/mvanhorn/last30days-skill",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 65516,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 66292,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary"
   },
   {
@@ -82,8 +83,8 @@
    "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 140606,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 143940,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "An AI skill that provides design intelligence for building professional UI/UX across multiple platforms."
   },
   {
@@ -105,8 +106,8 @@
    "url": "https://github.com/unclecode/crawl4ai",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 86289,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 86749,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "Open-source web crawler and scraper for LLMs and AI agents: any website into clean, LLM-ready Markdown. Run it yourself, or use Crawl4AI Cloud with one key. Join our Discord https://discord.gg/VuxzM8mtf"
   },
   {
@@ -128,8 +129,8 @@
    "url": "https://github.com/tt-a1i/archify",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 89477,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 92510,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "Turn any idea, plan, or codebase into a beautiful interactive diagram. An agent skill for Claude Code, Codex, and more."
   },
   {
@@ -151,8 +152,8 @@
    "url": "https://github.com/modelcontextprotocol/servers",
    "zrodlo": "GitHub",
    "licencja": "inna / niestandardowa",
-   "gwiazdki": 91574,
-   "aktywnosc": "2026-10-25",
+   "gwiazdki": 91746,
+   "aktywnosc": "2026-10-29",
    "opis_oryginalny": "Model Context Protocol Servers"
   },
   {
@@ -174,8 +175,8 @@
    "url": "https://github.com/punkpeye/awesome-mcp-servers",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 96884,
-   "aktywnosc": "2026-10-23",
+   "gwiazdki": 97181,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "A collection of MCP servers."
   },
   {
@@ -197,8 +198,8 @@
    "url": "https://github.com/github/github-mcp-server",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 33966,
-   "aktywnosc": "2026-10-23",
+   "gwiazdki": 34149,
+   "aktywnosc": "2026-10-30",
    "opis_oryginalny": "GitHub's official MCP Server"
   },
   {
@@ -220,8 +221,8 @@
    "url": "https://github.com/microsoft/playwright-mcp",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 38643,
-   "aktywnosc": "2026-10-22",
+   "gwiazdki": 38964,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "Playwright MCP server"
   },
   {
@@ -243,8 +244,8 @@
    "url": "https://github.com/upstash/context7",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 63701,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 64062,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "Context7 Platform -- Up-to-date docs for AI agents"
   },
   {
@@ -266,8 +267,8 @@
    "url": "https://github.com/PrefectHQ/fastmcp",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 28205,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 28269,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "🚀 The fast, Pythonic way to build MCP servers and clients."
   },
   {
@@ -289,8 +290,8 @@
    "url": "https://github.com/searxng/searxng",
    "zrodlo": "GitHub",
    "licencja": "AGPL-3.0",
-   "gwiazdki": 38859,
-   "aktywnosc": "2026-10-25",
+   "gwiazdki": 39109,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled."
   },
   {
@@ -312,7 +313,7 @@
    "url": "https://github.com/ComposioHQ/awesome-claude-skills",
    "zrodlo": "GitHub",
    "licencja": "brak danych",
-   "gwiazdki": 77972,
+   "gwiazdki": 78540,
    "aktywnosc": "2026-09-18",
    "opis_oryginalny": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
   },
@@ -335,8 +336,8 @@
    "url": "https://github.com/VoltAgent/awesome-agent-skills",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 36380,
-   "aktywnosc": "2026-10-25",
+   "gwiazdki": 36741,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible with Claude Code, Codex, Gemini CLI, Cursor, and more."
   },
   {
@@ -358,8 +359,8 @@
    "url": "https://github.com/blader/humanizer",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 60778,
-   "aktywnosc": "2026-10-16",
+   "gwiazdki": 63636,
+   "aktywnosc": "2026-10-28",
    "opis_oryginalny": "Agent skill that removes signs of AI-generated writing from text"
   },
   {
@@ -381,7 +382,7 @@
    "url": "https://github.com/ayghri/i-have-adhd",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 58787,
+   "gwiazdki": 59724,
    "aktywnosc": "2026-10-19",
    "opis_oryginalny": "A skill to stop your coding agent from burying the answer. ADHD-friendly output."
   },
@@ -404,8 +405,8 @@
    "url": "https://github.com/coreyhaines31/marketingskills",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 56585,
-   "aktywnosc": "2026-10-22",
+   "gwiazdki": 57917,
+   "aktywnosc": "2026-10-31",
    "opis_oryginalny": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering."
   },
   {
@@ -427,7 +428,7 @@
    "url": "https://github.com/dontriskit/awesome-ai-system-prompts",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 6264,
+   "gwiazdki": 6272,
    "aktywnosc": "2026-09-29",
    "opis_oryginalny": "🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt engineers. Incuding: ChatGPT, Claude, Perplexity, Manus, Claude-Code, Loveable, v0, Grok, same new, windsurf, notion, and MetaAI. "
   },
@@ -450,7 +451,7 @@
    "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
    "zrodlo": "GitHub",
    "licencja": "GPL-3.0",
-   "gwiazdki": 144262,
+   "gwiazdki": 144412,
    "aktywnosc": "2026-10-12",
    "opis_oryginalny": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models"
   },
@@ -473,8 +474,8 @@
    "url": "https://github.com/f/prompts.chat",
    "zrodlo": "GitHub",
    "licencja": "inna / niestandardowa",
-   "gwiazdki": 174605,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 175565,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy."
   },
   {
@@ -496,7 +497,7 @@
    "url": "https://github.com/e2b-dev/awesome-ai-agents",
    "zrodlo": "GitHub",
    "licencja": "inna / niestandardowa",
-   "gwiazdki": 30646,
+   "gwiazdki": 30761,
    "aktywnosc": "2026-08-21",
    "opis_oryginalny": "A list of AI autonomous agents"
   },
@@ -519,7 +520,7 @@
    "url": "https://github.com/Shubhamsaboo/awesome-llm-apps",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 143090,
+   "gwiazdki": 143700,
    "aktywnosc": "2026-10-22",
    "opis_oryginalny": "100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source."
   },
@@ -542,7 +543,7 @@
    "url": "https://github.com/nibzard/awesome-agentic-patterns",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 5047,
+   "gwiazdki": 5060,
    "aktywnosc": "2026-10-14",
    "opis_oryginalny": "A curated catalogue of awesome agentic AI patterns"
   },
@@ -565,8 +566,8 @@
    "url": "https://github.com/openai/openai-agents-python",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 30293,
-   "aktywnosc": "2026-10-22",
+   "gwiazdki": 30449,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "A lightweight, powerful framework for multi-agent workflows"
   },
   {
@@ -588,8 +589,8 @@
    "url": "https://github.com/crewAIInc/crewAI",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 60116,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 60403,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks."
   },
   {
@@ -611,8 +612,8 @@
    "url": "https://github.com/langchain-ai/langgraph",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 43923,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 44308,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "Build resilient agents."
   },
   {
@@ -634,9 +635,9 @@
    "url": "https://github.com/HKUDS/nanobot",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 49362,
-   "aktywnosc": "2026-10-26",
-   "opis_oryginalny": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps"
+   "gwiazdki": 49745,
+   "aktywnosc": "2026-11-02",
+   "opis_oryginalny": "Your lightweight open-source personal agent."
   },
   {
    "id": "TauricResearch__TradingAgents",
@@ -657,8 +658,8 @@
    "url": "https://github.com/TauricResearch/TradingAgents",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 115164,
-   "aktywnosc": "2026-10-16",
+   "gwiazdki": 119686,
+   "aktywnosc": "2026-10-27",
    "opis_oryginalny": "TradingAgents: Multi-Agents LLM Financial Trading Framework"
   },
   {
@@ -680,7 +681,7 @@
    "url": "https://github.com/enescingoz/awesome-n8n-templates",
    "zrodlo": "GitHub",
    "licencja": "inna / niestandardowa",
-   "gwiazdki": 26104,
+   "gwiazdki": 26223,
    "aktywnosc": "2026-09-12",
    "opis_oryginalny": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, WhatsApp, Google Drive, Notion, OpenAI, and more. AI agents, RAG   chatbots, email automation, social media, DevOps, and document processing. The largest open-source n8n template collection."
   },
@@ -703,8 +704,8 @@
    "url": "https://github.com/n8n-io/n8n",
    "zrodlo": "GitHub",
    "licencja": "inna / niestandardowa",
-   "gwiazdki": 208623,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 209325,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations."
   },
   {
@@ -726,8 +727,8 @@
    "url": "https://github.com/upptime/upptime",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 17186,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 17195,
+   "aktywnosc": "2026-11-02",
    "opis_oryginalny": "⬆️ GitHub Actions uptime monitor & status page by @AnandChowdhary"
   },
   {
@@ -749,8 +750,8 @@
    "url": "https://github.com/simonw/llm",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 12672,
-   "aktywnosc": "2026-10-21",
+   "gwiazdki": 12689,
+   "aktywnosc": "2026-10-30",
    "opis_oryginalny": "Access large language models from the command-line"
   },
   {
@@ -772,7 +773,7 @@
    "url": "https://github.com/simonw/shot-scraper",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 2597,
+   "gwiazdki": 2600,
    "aktywnosc": "2026-10-14",
    "opis_oryginalny": "A CLI utility for taking screenshots of websites, recording video demos and scraping sites using JavaScript"
   },
@@ -795,8 +796,8 @@
    "url": "https://github.com/yt-dlp/yt-dlp",
    "zrodlo": "GitHub",
    "licencja": "Unlicense",
-   "gwiazdki": 202328,
-   "aktywnosc": "2026-10-23",
+   "gwiazdki": 204584,
+   "aktywnosc": "2026-10-29",
    "opis_oryginalny": "A feature-rich command-line audio/video downloader"
   },
   {
@@ -818,8 +819,8 @@
    "url": "https://github.com/tabler/tabler",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 41957,
-   "aktywnosc": "2026-10-25",
+   "gwiazdki": 41987,
+   "aktywnosc": "2026-10-29",
    "opis_oryginalny": "Free and open source admin dashboard UI kit built on Bootstrap: 100+ pages, 6,000+ icons, dark mode, RTL."
   },
   {
@@ -841,7 +842,7 @@
    "url": "https://github.com/chartjs/Chart.js",
    "zrodlo": "GitHub",
    "licencja": "MIT",
-   "gwiazdki": 67760,
+   "gwiazdki": 67774,
    "aktywnosc": "2026-10-23",
    "opis_oryginalny": "Simple HTML5 Charts using the <canvas> tag"
   },
@@ -960,8 +961,8 @@
    "url": "https://github.com/dgtlmoon/changedetection.io",
    "zrodlo": "GitHub",
    "licencja": "Apache-2.0",
-   "gwiazdki": 35304,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 35446,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "Best and simplest tool for website change detection, web page monitoring, and website change alerts. Perfect for tracking content changes, price drops, restock alerts, and website defacement monitoring—all for free or enjoy our SaaS plan!"
   },
   {
@@ -983,8 +984,8 @@
    "url": "https://github.com/RSS-Bridge/rss-bridge",
    "zrodlo": "GitHub",
    "licencja": "Unlicense",
-   "gwiazdki": 9320,
-   "aktywnosc": "2026-10-26",
+   "gwiazdki": 9326,
+   "aktywnosc": "2026-10-31",
    "opis_oryginalny": "The RSS feed for websites missing it"
   },
   {
@@ -1006,8 +1007,8 @@
    "url": "https://github.com/gitroomhq/postiz-app",
    "zrodlo": "GitHub",
    "licencja": "AGPL-3.0",
-   "gwiazdki": 38078,
-   "aktywnosc": "2026-10-24",
+   "gwiazdki": 40628,
+   "aktywnosc": "2026-11-01",
    "opis_oryginalny": "📨 The ultimate agentic social media scheduling tool 🤖"
   },
   {
@@ -1024,7 +1025,7 @@
     "Dla AR na iPhonie eksportuje też wersję USDZ."
    ],
    "prompt": "Na stronie Projektu Domu dodaj zakładkę „Model 3D”, która pokazuje model z projekt-domu/3d/parter-g2-v2.glb przez <model-viewer> (https://github.com/google/model-viewer). Plik biblioteki skopiuj do repo, bez CDN. Ma działać na iPhonie: obracanie palcem i przycisk AR (Quick Look, wersja USDZ). Pokaż mi zrzut z widoku iPhone'a.",
-   "gwiazdki": 8292,
+   "gwiazdki": 8303,
    "aktywnosc": "2026-10-23",
    "licencja": "Apache-2.0",
    "opis_oryginalny": "Easily display interactive 3D models on the web and in AR! ",
@@ -1051,8 +1052,8 @@
     "Przerabia wycenę z CSV na arkusz z formułami."
    ],
    "prompt": "Przeczytaj skille xlsx i pdf z https://github.com/anthropics/skills tylko jako inspirację: mają licencję zastrzeżoną (All rights reserved), więc nie kopiuj z nich tekstu ani skryptów. Napisz własne podejście od zera na openpyxl (MIT): zrób z pliku projekt-domu/02-wycena-budowy.csv arkusz Excel z formułami (sumy etapów, wariant min/średni/max, rezerwa 10%) i sprawdź, czy formuły się przeliczają.",
-   "gwiazdki": 183914,
-   "aktywnosc": "2026-10-09",
+   "gwiazdki": 186472,
+   "aktywnosc": "2026-10-28",
    "licencja": "zastrzeżona (All rights reserved) – tylko jako wzór, nie kopiować",
    "opis_oryginalny": "Public repository for Agent Skills",
    "id": "pd__anthropics__skills",
@@ -1076,7 +1077,7 @@
     "Dodaje zakładkę „Harmonogram”, czytelną na iPhonie."
    ],
    "prompt": "Na podstawie etapów z projekt-domu/02-wycena-budowy.csv zrób harmonogram budowy (harmonogram.json: etap, start, koniec, zależności, % postępu) i dodaj na stronę Projektu Domu zakładkę „Harmonogram” z wykresem Frappe Gantt (https://github.com/frappe/gantt). Pliki biblioteki skopiuj do repo. Ma się dobrze przewijać na iPhonie. Terminy oznacz jako szacunkowe.",
-   "gwiazdki": 6153,
+   "gwiazdki": 6157,
    "aktywnosc": "2026-06-18",
    "licencja": "MIT",
    "opis_oryginalny": "Open Source Javascript Gantt",
@@ -1102,7 +1103,7 @@
     "Przenosi dobre pomysły (wymiary mebli, linki, kontrola przejść) do własnego workflow."
    ],
    "prompt": "Przeczytaj skill https://github.com/akseolabs-seo/interior-design-master (SKILL.md, kontrakty JSON, scripts). Porównaj jego metodę z tym, jak pracujesz w projekt-domu (pomieszczenia.json, zakupy, wizualizacje). Wypisz po polsku 5 rzeczy, które warto przejąć, np. sprawdzanie wymiarów mebli i przejść. Niczego nie zmieniaj bez mojej zgody.",
-   "gwiazdki": 10,
+   "gwiazdki": 12,
    "aktywnosc": "2026-09-11",
    "licencja": "MIT",
    "opis_oryginalny": "An English-first, evidence-aware skill for turning floor plans and style references into editable residential 3D viewers.",
@@ -1128,8 +1129,8 @@
     "Zapisuje warstwy: ściany, drzwi, okna, meble, wymiary."
    ],
    "prompt": "Użyj biblioteki ezdxf (https://github.com/mozman/ezdxf), żeby z modelu rzutów w projekt-domu/rzuty-2d wyeksportować rzut parteru i poddasza do DXF z warstwami: ściany, otwory, meble, wymiary, opisy. Sprawdź wynik, renderując DXF z powrotem do PNG. Nie zmieniaj istniejących plików SVG/PDF.",
-   "gwiazdki": 1496,
-   "aktywnosc": "2026-10-20",
+   "gwiazdki": 1510,
+   "aktywnosc": "2026-11-02",
    "licencja": "MIT",
    "opis_oryginalny": "Python interface to DXF",
    "url": "https://github.com/mozman/ezdxf",
@@ -1154,8 +1155,8 @@
     "Prostsza droga: agent pisze skrypty bpy i renderuje GLB bez okna."
    ],
    "prompt": "Oceń, czy na Twoim komputerze da się uruchomić Blendera (najlepiej bez okna, przez bpy) i wyrenderować salon z projekt-domu/3d/parter-g2-v2.glb z kamerą jak w wizualizacji v1. Opisz, co dałby Blender MCP (https://github.com/ahujasid/mcp-for-blender) w porównaniu ze skryptami bpy. Nic nie instaluj, dopóki nie zatwierdzę planu.",
-   "gwiazdki": 32404,
-   "aktywnosc": "2026-10-24",
+   "gwiazdki": 33024,
+   "aktywnosc": "2026-10-29",
    "licencja": "MIT",
    "opis_oryginalny": "Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.",
    "url": "https://github.com/ahujasid/mcp-for-blender",
@@ -1180,8 +1181,8 @@
     "Stosuje je w skryptach renderujących."
    ],
    "prompt": "Przejrzyj https://github.com/EL4CTEO/blender-skills i wybierz skille przydatne do renderów wnętrz: światło dzienne, materiały PBR (drewno, płytki, tkaniny), kamera we wnętrzu. Streść mi je po polsku i zaproponuj, jak użyć ich przy wizualizacjach Projektu Domu.",
-   "gwiazdki": 521,
-   "aktywnosc": "2026-10-19",
+   "gwiazdki": 657,
+   "aktywnosc": "2026-10-30",
    "licencja": "MIT",
    "opis_oryginalny": "Professional Blender 5.2 workflows as Agent Skills for Claude Code, Codex, Gemini CLI, Copilot and Cursor: modeling, UVs, PBR, baking, rigging, animation, export and QA.",
    "url": "https://github.com/EL4CTEO/blender-skills",
@@ -1206,7 +1207,7 @@
     "Na start buduje jeden pokój z pomieszczenia.json."
    ],
    "prompt": "Oceń, czy można uruchomić Sweet Home 3D z wtyczką https://github.com/grimashevich/sweethome3d-mcp-server na Twoim komputerze (Linux z pulpitem) i zbudować w nim pokój 2-06 z projekt-domu/pomieszczenia.json. Najpierw pokaż mi plan i ryzyka, nic jeszcze nie instaluj.",
-   "gwiazdki": 70,
+   "gwiazdki": 75,
    "aktywnosc": "2026-10-21",
    "licencja": "GPL-2.0",
    "opis_oryginalny": "Sweet Home 3D plugin that embeds an MCP server — lets Claude control Sweet Home 3D over HTTP",
@@ -1232,7 +1233,7 @@
     "Porównuje kilka pozycji z wyceną (np. ławy, ściany)."
    ],
    "prompt": "Przeczytaj https://github.com/datadrivenconstruction/OpenConstructionEstimate-DDC-CWICR (README, DATA_DICTIONARY, polska kolekcja). Sprawdź licencję danych i skąd pochodzą stawki dla Polski. Potem porównaj 5 pozycji z projekt-domu/02-wycena-budowy.csv (ławy, ściany Porotherm, strop, tynki, wylewki) i pokaż różnice w tabeli.",
-   "gwiazdki": 257,
+   "gwiazdki": 264,
    "aktywnosc": "2026-08-21",
    "licencja": "inna / niestandardowa",
    "opis_oryginalny": "Open multilingual construction cost database for AI Agents - 55K+ work items, 27K+ resources, 30 regions. Semantic search via Qdrant vector DB",
@@ -1258,7 +1259,7 @@
     "Eksportuje do STEP/DXF dla stolarza."
    ],
    "prompt": "Oceń, czy przy pomocy FreeCAD MCP (https://github.com/neka-nat/freecad-mcp) lub skryptów FreeCAD w Pythonie na Twoim komputerze możesz zaprojektować na wymiar zabudowę garderoby 2/04 z Projektu Domu i wyeksportować rysunek dla stolarza. Pokaż plan, nic jeszcze nie instaluj.",
-   "gwiazdki": 3066,
+   "gwiazdki": 3183,
    "aktywnosc": "2026-10-25",
    "licencja": "MIT",
    "opis_oryginalny": "FreeCAD MCP(Model Context Protocol) server",
@@ -1284,7 +1285,7 @@
     "Porównuje rozmiar i wygląd przed i po."
    ],
    "prompt": "Użyj glTF-Transform (https://github.com/donmccurdy/glTF-Transform), żeby zoptymalizować GLB spaceru: npx @gltf-transform/cli optimize wejscie.glb wyjscie.glb --compress meshopt --texture-compress ktx2 (bez narzędzia ktx użyj webp). Pokaż tabelę rozmiarów przed i po oraz zrzut z three.js, żeby sprawdzić, czy lightmapy nie straciły jakości. W three.js dodaj MeshoptDecoder i KTX2Loader.",
-   "gwiazdki": 2008,
+   "gwiazdki": 2057,
    "aktywnosc": "2026-10-20",
    "licencja": "MIT",
    "opis_oryginalny": "glTF 2.0 SDK for JavaScript and TypeScript, on Web and Node.js.",
@@ -1310,8 +1311,8 @@
     "Testuje na widoku iPhone'a."
    ],
    "prompt": "Zbuduj tour panoram 360 na Photo Sphere Viewer (https://github.com/mistic100/Photo-Sphere-Viewer) z wtyczkami virtual-tour, markers i gyroscope. Pliki biblioteki skopiuj do repo strony, bez CDN. Punkty i przejścia między pokojami opisz w tour.json, a na każdej panoramie dodaj hotspoty z nazwą materiału. Sprawdź na iPhonie 390×844.",
-   "gwiazdki": 2401,
-   "aktywnosc": "2026-10-25",
+   "gwiazdki": 2403,
+   "aktywnosc": "2026-10-30",
    "licencja": "MIT",
    "opis_oryginalny": "A JavaScript library to display 360° sphere panoramas.",
    "url": "https://github.com/mistic100/Photo-Sphere-Viewer",
@@ -1336,7 +1337,7 @@
     "Ocenia płynność i wagę pliku na iPhonie."
    ],
    "prompt": "Oceń Spark (https://github.com/sparkjsdev/spark) do spaceru po domu: zrób testową stronę three.js z przykładowym splatem z repo i joystickiem, a potem zmierz FPS i rozmiar pliku w widoku iPhone'a. Opisz, jak z renderów Cycles z wielu kamer zrobić własny splat (np. gsplat, Apache-2.0, wymaga GPU NVIDIA) i czy da się to zrobić na Twoim komputerze.",
-   "gwiazdki": 3811,
+   "gwiazdki": 3854,
    "aktywnosc": "2026-10-20",
    "licencja": "MIT",
    "opis_oryginalny": ":sparkles:  An advanced 3D Gaussian Splatting renderer for THREE.js",
@@ -1362,8 +1363,8 @@
     "Łączy je z joystickiem nipplejs."
    ],
    "prompt": "Na podstawie przykładu characterMovement z https://github.com/gkjohnson/three-mesh-bvh dodaj do spaceru three.js kolizje kapsuły gracza (wysokość oczu 1,65 m) ze ścianami i meblami. Do chodzenia użyj joysticka nipplejs (https://github.com/yoannmoinet/nipplejs, MIT), a do rozglądania przeciągania prawą stroną ekranu. Bibliotek nie ładuj z CDN, a całość przetestuj w widoku iPhone'a.",
-   "gwiazdki": 3528,
-   "aktywnosc": "2026-10-22",
+   "gwiazdki": 3549,
+   "aktywnosc": "2026-10-28",
    "licencja": "MIT",
    "opis_oryginalny": "A BVH implementation to speed up raycasting and enable spatial queries against three.js meshes.",
    "url": "https://github.com/gkjohnson/three-mesh-bvh",
@@ -1388,7 +1389,7 @@
     "Skaluje siatkę do wymiarów z karty produktu."
    ],
    "prompt": "Zainstaluj TripoSR (https://github.com/VAST-AI-Research/TripoSR, kod i wagi MIT) w osobnym venv, na CPU (--device cpu). Najpierw zmierz czas i zużycie RAM na jednym zdjęciu produktu. Wygeneruj GLB (--model-save-format glb), przeskaluj go do wymiarów szer./gł./wys. z karty produktu i zapisz razem z nazwą produktu i linkiem do sklepu. Nie używaj modeli z licencją niekomercyjną.",
-   "gwiazdki": 7231,
+   "gwiazdki": 7276,
    "aktywnosc": "2026-06-04",
    "licencja": "MIT",
    "opis_oryginalny": "TripoSR: Fast 3D Object Reconstruction from a Single Image",
@@ -1414,8 +1415,8 @@
     "Robi raport z najsłabszymi meblami."
    ],
    "prompt": "Użyj facebook/dinov2-small (Apache-2.0, CPU) z transformers. Dla każdej pary (zdjęcie produktu ze sklepu, wycinek renderu z tym meblem) policz podobieństwo cosinusowe embeddingów CLS. Zapisz CSV: produkt, link, wynik. Pokaż 5 najsłabszych dopasowań z obrazkami obok siebie.",
-   "gwiazdki": 13475,
-   "aktywnosc": "2026-10-06",
+   "gwiazdki": 13492,
+   "aktywnosc": "2026-11-01",
    "licencja": "Apache-2.0",
    "opis_oryginalny": "PyTorch code and models for the DINOv2 self-supervised learning method.",
    "url": "https://github.com/facebookresearch/dinov2",
@@ -1440,8 +1441,8 @@
     "Zwraca top 3 z linkami."
    ],
    "prompt": "Użyj open_clip z wagami laion2b_s34b_b79k dla ViT-B-32 (MIT, CPU). Zbuduj lokalny indeks embeddingów zdjęć produktów z mojej listy zakupów, a potem dla zapytania tekstowego lub wycinka renderu zwróć 3 najbliższe produkty z linkiem i wynikiem podobieństwa. Nie używaj wag openai bez licencji.",
-   "gwiazdki": 14222,
-   "aktywnosc": "2026-10-24",
+   "gwiazdki": 14238,
+   "aktywnosc": "2026-10-29",
    "licencja": "MIT (kod) / MIT (wagi LAION ViT-B-32)",
    "opis_oryginalny": "An open source implementation of CLIP.",
    "url": "https://github.com/mlfoundations/open_clip",
@@ -1449,6 +1450,195 @@
    "tagi": [
     "Projekt Domu"
    ],
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "heydamir/unslop",
+   "kategoria": "Skille",
+   "nazwa": "unslop – z „wyglądu AI” do zaprojektowanego UI",
+   "ocena": 9,
+   "trudnosc": "łatwa",
+   "opis": "Skill (SKILL.md), który najpierw wypisuje oznaki „AI-slopu” w interfejsie (fioletowe gradienty, poświaty, emoji w etykietach, krzykliwe teksty, nierówne odstępy), proponuje kierunek, a potem poprawia odstępy, kolory, ikony, teksty, typografię i układ. Opcjonalnie robi krótkie wideo „przed i po” (Playwright + ffmpeg). Repo z 29.10.2026, bardzo szybko rośnie.",
+   "dlaczego": "Twoje strony (zwiadowca, centrum dowodzenia, Projekt Domu) są robione przez agentów – ten skill daje gotową listę kontrolną, żeby nie wyglądały „jak z generatora”. Licencja CC BY 4.0 pozwala adaptować, z podaniem autora.",
+   "kroki": [
+    "Bot czyta skills/unslop/SKILL.md i referencje.",
+    "Adaptuje go jako własny skill (z atrybucją autora, CC BY 4.0) albo dopisuje zasady do skilla projektowanie-stron.",
+    "Robi audyt jednej Twojej strony i pokazuje zrzuty przed i po."
+   ],
+   "prompt": "Przeczytaj skill https://github.com/heydamir/unslop (skills/unslop/SKILL.md i references). Licencja to CC BY 4.0, więc przy adaptacji podaj autora (Damir Sokolovsky) i link do repo. Dopisz najlepsze zasady do mojego skilla projektowanie-stron, zachowując styl iOS/glass. Potem zrób audyt strony https://damiangrok5-droid.github.io/grok-zwiadowca/: wypisz po polsku oznaki „wyglądu AI”, zaproponuj kierunek i pokaż zrzuty z iPhone'a przed i po. Nie publikuj zmian bez mojej zgody.",
+   "gwiazdki": 5173,
+   "aktywnosc": "2026-11-01",
+   "licencja": "CC-BY-4.0",
+   "opis_oryginalny": "A Claude skill that turns vibecoded, AI-looking UI into a designed interface",
+   "url": "https://github.com/heydamir/unslop",
+   "id": "w__heydamir__unslop",
+   "tagi": [
+    "Nowe 02.11"
+   ],
+   "dodano": "2026-11-02",
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "enmerasoftware/ai-design-check",
+   "kategoria": "Narzędzia CLI",
+   "nazwa": "ai-design-check – automatyczny przegląd designu",
+   "ocena": 8,
+   "trudnosc": "łatwa",
+   "opis": "87 zasad projektowania i checker bez zależności i bez klucza API (npx @enmera/ai-design-check): wskazuje plik i linię z problemem (dostępność, skala fontów, kontrast, dekoracyjne wersaliki). Ma też tryb „narrow” sprawdzający, co psuje się na telefonie, oraz skill do naprawy ekranu.",
+   "dlaczego": "Daje mierzalny wynik „przed i po” zamiast oceny na oko, a tryb narrow testuje dokładnie to, na czym Ci zależy: widok na iPhonie.",
+   "kroki": [
+    "Bot uruchamia checker na swoim komputerze na pliku index.html.",
+    "Tryb narrow sprawdza wąski ekran.",
+    "Bot poprawia błędy i pokazuje liczbę problemów przed i po."
+   ],
+   "prompt": "Na swoim komputerze uruchom npx @enmera/ai-design-check (https://github.com/enmerasoftware/ai-design-check, MIT) dla /workspace/grok-zwiadowca/template.html, a potem tryb narrow dla index.html. Pokaż mi po polsku listę błędów i ostrzeżeń, popraw te z dostępności i czytelności na iPhonie i podaj liczbę problemów przed i po. Nie publikuj bez mojej zgody.",
+   "gwiazdki": 174,
+   "aktywnosc": "2026-11-02",
+   "licencja": "MIT",
+   "opis_oryginalny": "Design rules and a zero-dependency checker for interfaces built with AI coding agents, on the web and in SwiftUI and Jetpack Compose apps. English and Turkish.",
+   "url": "https://github.com/enmerasoftware/ai-design-check",
+   "id": "w__enmerasoftware__ai-design-check",
+   "tagi": [
+    "Nowe 02.11"
+   ],
+   "dodano": "2026-11-02",
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "emanuele-em/kanzo",
+   "kategoria": "Workflow multi-agent",
+   "nazwa": "Kanzo – tablica kanban dla Ciebie i agentów (MCP)",
+   "ocena": 7,
+   "trudnosc": "średnia",
+   "opis": "Tablica kanban w przeglądarce i serwer MCP w jednym programie (4,5 MB, bez konta i bez bazy). Agenci biorą zadania, przesuwają karty i komentują przez MCP, a Ty widzisz to na tablicy. Licencja AGPL-3.0.",
+   "dlaczego": "Masz kilku agentów (Zwiadowca, Projekt Domu, Trading, Trener) – wspólna tablica zadań pokazałaby, kto co robi. Uwaga: to narzędzie lokalne na komputerze bota, Grok Bot nie podłączy go jako konektora bez publicznego adresu.",
+   "kroki": [
+    "Bot uruchamia kanzo lokalnie na swoim komputerze.",
+    "Agenci dodają i przesuwają karty przez polecenie kanzo (CLI).",
+    "Bot co tydzień eksportuje stan tablicy do centrum dowodzenia."
+   ],
+   "prompt": "Przeczytaj https://github.com/emanuele-em/kanzo (AGPL-3.0) i oceń po polsku, czy da się go użyć na Twoim komputerze jako wspólnej tablicy zadań dla moich agentów: uruchom go lokalnie bez wystawiania do internetu, dodaj 3 przykładowe karty przez polecenie kanzo i powiedz, jak inni agenci mogliby z niego korzystać. Niczego nie podłączaj do moich kont.",
+   "gwiazdki": 681,
+   "aktywnosc": "2026-11-01",
+   "licencja": "AGPL-3.0",
+   "opis_oryginalny": "Self-hosted, sharable kanban for humans and agents. One 4.5 MB binary, 4.5 MB of RAM, 10 to 60 tokens per agent reply, starts in 2 ms, zero setup.",
+   "url": "https://github.com/emanuele-em/kanzo",
+   "id": "w__emanuele-em__kanzo",
+   "tagi": [
+    "Nowe 02.11"
+   ],
+   "dodano": "2026-11-02",
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "caru-ini/stack-diagram",
+   "kategoria": "Skille",
+   "nazwa": "stack-diagram – schemat architektury z jednego zdania",
+   "ocena": 7,
+   "trudnosc": "łatwa",
+   "opis": "Skill, który z opisu typu „Next.js na Vercel, Postgres na Neon, płatności Stripe” rysuje schemat architektury z oficjalnymi logo, w trybie jasnym i ciemnym, jako jeden samodzielny plik HTML (albo PNG). Kod MIT, fonty OFL. Repo z 1.11.2026.",
+   "dlaczego": "Ładny, gotowy do wklejenia na stronę schemat Twojego systemu agentów (Grok Bot, GitHub Pages, routines, konektory) – dobry do centrum dowodzenia. Uwaga: po narysowaniu proponuje publikację w publicznej galerii – trzeba odmówić (prywatność).",
+   "kroki": [
+    "Bot czyta SKILL.md i adaptuje go jako własny skill.",
+    "Opisujesz swój układ agentów jednym zdaniem.",
+    "Bot zapisuje schemat HTML i dodaje go do centrum dowodzenia – bez publikacji w galerii."
+   ],
+   "prompt": "Przeczytaj skill https://github.com/caru-ini/stack-diagram (MIT) i według niego narysuj schemat mojego systemu: Grok Bot z agentami Zwiadowca Rozwiązań, Projekt Domu i Trading, routines, GitHub Pages i konektory GitHub i X. Zapisz jako jeden plik HTML w trybie jasnym i ciemnym i pokaż mi zrzut. NIE publikuj niczego w galerii stacks.caru.moe ani nigdzie indziej bez mojej zgody.",
+   "gwiazdki": 692,
+   "aktywnosc": "2026-11-02",
+   "licencja": "MIT",
+   "opis_oryginalny": "Agent skill: describe your stack in a sentence, get an architecture diagram with official logos",
+   "url": "https://github.com/caru-ini/stack-diagram",
+   "id": "w__caru-ini__stack-diagram",
+   "tagi": [
+    "Nowe 02.11"
+   ],
+   "dodano": "2026-11-02",
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "KrushnaVardhanReddy/PaperPilot",
+   "kategoria": "Serwery MCP",
+   "nazwa": "PaperPilot – narzędzia PDF jako MCP i CLI (lokalnie)",
+   "ocena": 7,
+   "trudnosc": "średnia",
+   "opis": "Silnik PDF w Ruście działający lokalnie: łączenie, dzielenie, OCR, kompresja i ekstrakcja tekstu. Ten sam silnik działa jako serwer MCP, CLI, lokalne REST API i wersja w przeglądarce (WASM). Był na Hacker News (236 punktów, 26.10.2026).",
+   "dlaczego": "Przydaje się Projektowi Domu i każdemu agentowi pracującemu z PDF-ami (oferty wykonawców, kosztorysy). Pliki nie opuszczają komputera, co pasuje do Twoich zasad prywatności.",
+   "kroki": [
+    "Bot pobiera wydanie CLI z Releases na swój komputer.",
+    "Testuje łączenie, kompresję i ekstrakcję tekstu na przykładowym PDF.",
+    "Jeśli działa dobrze, zapisuje skill „obróbka PDF” korzystający z CLI."
+   ],
+   "prompt": "Pobierz na swój komputer CLI PaperPilot z https://github.com/KrushnaVardhanReddy/PaperPilot/releases (Apache-2.0). Na przykładowym PDF bez danych osobowych przetestuj: połączenie dwóch plików, kompresję i wyciągnięcie tekstu. Porównaj wynik z poppler-utils i powiedz po polsku, czy warto zrobić z tego skill do obróbki PDF dla Projektu Domu.",
+   "gwiazdki": 746,
+   "aktywnosc": "2026-11-01",
+   "licencja": "Apache-2.0 (wg pliku LICENSE; GitHub API: niestandardowa)",
+   "opis_oryginalny": "Your local AI copilot for documents",
+   "url": "https://github.com/KrushnaVardhanReddy/PaperPilot",
+   "id": "w__KrushnaVardhanReddy__PaperPilot",
+   "tagi": [
+    "Nowe 02.11"
+   ],
+   "dodano": "2026-11-02",
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "YTruman/better-skill",
+   "kategoria": "Skille",
+   "nazwa": "better-skill – „lekarz” do audytu skilli",
+   "ocena": 7,
+   "trudnosc": "łatwa",
+   "opis": "Standard i skill do oceny innych skilli: tryby tworzenia, audytu (raport z numerami linii i priorytetami P0/P1/P2), poprawek (minimalne łatki) i porównania dwóch skilli na pięciu skalach (m.in. trafność uruchamiania i zużycie tokenów). Dokumentacja po chińsku i angielsku. MIT.",
+   "dlaczego": "Masz już kilka własnych skilli (projektowanie-stron, tworzenie-skilli, pdf-dla-wykonawcy…). To gotowa metoda, żeby sprawdzić, czy uruchamiają się wtedy, kiedy trzeba, i czy nie są przegadane.",
+   "kroki": [
+    "Bot czyta README.en.md i pliki standardu.",
+    "Robi audyt 2–3 Twoich skilli.",
+    "Proponuje małe poprawki i czeka na Twoją zgodę."
+   ],
+   "prompt": "Przeczytaj https://github.com/YTruman/better-skill (README.en.md i pliki standardu, MIT). Według tej metody zrób audyt moich skilli projektowanie-stron, tworzenie-skilli i pdf-dla-wykonawcy: raport po polsku z priorytetami P0/P1/P2 i proponowanymi minimalnymi poprawkami. Niczego nie zmieniaj bez mojej zgody.",
+   "gwiazdki": 175,
+   "aktywnosc": "2026-10-31",
+   "licencja": "MIT",
+   "opis_oryginalny": "The doctor's manual for AI agent skills — audit, score and build skills with an evidence-based standard. 技能医生",
+   "url": "https://github.com/YTruman/better-skill",
+   "id": "w__YTruman__better-skill",
+   "tagi": [
+    "Nowe 02.11"
+   ],
+   "dodano": "2026-11-02",
+   "zrodlo": "GitHub",
+   "top": false
+  },
+  {
+   "repo": "Moh4696/open-3d-skills",
+   "kategoria": "Skille",
+   "nazwa": "Open 3D Skills – sceny three.js i animowane strony",
+   "ocena": 7,
+   "trudnosc": "średnia",
+   "opis": "Osiem skilli do stron 3D: sceny three.js budowane z kodu (bez plików modeli), filmy przewijane scrollem, przezroczyste wideo działające w Safari, widok rozłożony (exploded view) i inne. MIT.",
+   "dlaczego": "Dla Projektu Domu (spacer 3D, model GLB) i dla efektownych stron działających na iPhonie – wskazówki pod Safari są tu kluczowe.",
+   "kroki": [
+    "Bot czyta skill threejs-scene i ten o wideo w Safari.",
+    "Porównuje z obecnym spacerem 3D Projektu Domu.",
+    "Proponuje 3 ulepszenia i testuje je w widoku iPhone'a."
+   ],
+   "prompt": "Przeczytaj skille z https://github.com/Moh4696/open-3d-skills (MIT), zwłaszcza threejs-scene. Porównaj ich metody z tym, jak zbudowany jest spacer 3D w Projekcie Domu, i zaproponuj po polsku 3 konkretne ulepszenia (wydajność i wygląd na iPhonie w Safari). Niczego nie zmieniaj bez mojej zgody.",
+   "gwiazdki": 151,
+   "aktywnosc": "2026-10-31",
+   "licencja": "MIT",
+   "opis_oryginalny": "Eight agent skills for 3D and animated websites: three.js scenes from code, scroll films, transparent video, cursor rigs, exploded views, AI motion assets, browser checks and 60 fps recording. Claude Code, Codex, Cursor, Gemini CLI.",
+   "url": "https://github.com/Moh4696/open-3d-skills",
+   "id": "w__Moh4696__open-3d-skills",
+   "tagi": [
+    "Nowe 02.11"
+   ],
+   "dodano": "2026-11-02",
    "zrodlo": "GitHub",
    "top": false
   }

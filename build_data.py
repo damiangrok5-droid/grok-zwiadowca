@@ -247,10 +247,12 @@ LIC_OVERRIDE={'anthropics__skills':'mieszana: Apache-2.0 / zastrzeżona (docx, x
 for _i in items:
     if _i['id'] in LIC_OVERRIDE: _i['licencja']=LIC_OVERRIDE[_i['id']]
 items += projekt_domu_items()
+from zwiady_tygodniowe import weekly_items
+items += weekly_items()
 assert len(items)==len({i['id'] for i in items})
-data=dict(tytul="Zwiadowca Rozwiązań",data_zwiadu="2026-10-26",wygenerowano=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"),
-  zrodla=["GitHub API (gh api repos/…, search/repositories)","Hacker News (Algolia API)","Reddit (wyniki wyszukiwania; API Reddita zablokowane z komputera bota)","awesome-listy: awesome-mcp-servers, modelcontextprotocol/servers, awesome-claude-skills, awesome-agent-skills, awesome-ai-agents"],
-  uwagi="Pozycje z tagiem Projekt Domu dodano 26.10.2026 dla agenta projektowania domu. Gwiazdki i daty ostatniego pushu pobrane z GitHub API w dniu zwiadu. Dla pozycji spoza GitHuba podano punkty z HN/Reddita i datę publikacji.",
+data=dict(tytul="Zwiadowca Rozwiązań",data_zwiadu="2026-11-02",wygenerowano=datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%MZ"),
+  zrodla=["GitHub API (gh api repos/…, search/repositories)","GitHub search (repo utworzone w ostatnim tygodniu)","Hacker News (Algolia API)","Reddit (wyniki wyszukiwania; API Reddita zablokowane z komputera bota)","awesome-listy: awesome-mcp-servers, modelcontextprotocol/servers, awesome-claude-skills, awesome-agent-skills, awesome-ai-agents"],
+  uwagi="Pozycje z tagiem „Nowe 02.11” dodano w cotygodniowym zwiadzie 2.11.2026. Pozycje z tagiem Projekt Domu dodano 26.10.2026 dla agenta projektowania domu. Gwiazdki i daty ostatniego pushu pobrane z GitHub API w dniu zwiadu. Dla pozycji spoza GitHuba podano punkty z HN/Reddita i datę publikacji.",
   top5=[i['id'] for i in items if i['top']], pozycje=items)
 data['top5']=[k.replace('/','__') for k in TOP]
 data['top5_projekt_domu']=PD_TOP
